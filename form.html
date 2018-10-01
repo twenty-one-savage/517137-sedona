@@ -63,25 +63,22 @@
       <ul class="form__list rating-list">
         <li class="rating-list__item">
           <!--Здесь будет реализация кастомных чекбоксов -->
-          <input type="radio" name="feeling" value="positive" id="feeling1-field"  checked>
-          <label class="rating-list__checkbox" for="feeling1-field">
-            <span class="rating-list__checkbox-indicator"></span>
+          <label class="rating-list__checkbox">
+            <input type="radio" name="feeling" value="positive" checked>
             Скорее положительное
           </label>
         </li>
         <li class="rating-list__item">
           <!--Здесь будет реализация кастомных чекбоксов -->
-          <input type="radio" name="feeling" value="negative" id="feeling2-field">
-          <label class="rating-list__checkbox" for="feeling2-field">
-            <span class="rating-list__checkbox-indicator"></span>
+          <label class="rating-list__checkbox">
+            <input type="radio" name="feeling" value="negative">
             Скорее отрицательное
           </label>
         </li>
         <li class="rating-list__item">
-          <!--Здесь бдлет реализация кастомных чекбоксов -->
-          <input type="radio" name="feeling" id="feeling3-field" value="neutral">
-          <label class="rating-list__checkbox" for="feeling3-field">
-            <span class="rating-list__checkbox-indicator"></span>
+          <!--Здесь будет реализация кастомных чекбоксов -->
+          <label class="rating-list__checkbox">
+            <input type="radio" name="feeling" value="neutral">
             Затрудняюсь ответить
           </label>
         </li>
@@ -90,50 +87,43 @@
       <!-- Список с достопроимечательностями -->
       <ul class="form__list sights-list">
         <li class="sights-list__item">
-          <!--Здесь булет реализация кастомных чекбоксов -->
+          <!--Здесь будет реализация кастомных чекбоксов -->
           <label class="sights-list__checkbox">
             <input type="checkbox" name="Devil's Bridge" checked>
-            <span class="sights-list__checkbox-indicator"></span>
-            <span class="sights-list__sight">Мост Дьявола</span>
+            Мост Дьявола
           </label>
         </li>
         <li class="sights-list__item">
-          <!--Здесь булет реализация кастомных чекбоксов -->
+          <!--Здесь будет реализация кастомных чекбоксов -->
           <label class="sights-list__checkbox">
             <input type="checkbox" name="Bell Rock" checked>
-            <span class="sights-list__checkbox-indicator"></span>
-            <span class="sights-list__sight">Гора-Колокол</span>
+            Гора-Колокол
           </label>
         </li>
         <li class="sights-list__item">
-          <!--Здесь булет реализация кастомных чекбоксов -->
+          <!--Здесь будет реализация кастомных чекбоксов -->
           <label class="sights-list__checkbox">
             <input type="checkbox" name="Slide Park" checked>
-            <span class="sights-list__checkbox-indicator"></span>
-            <span class="sights-list__sight">Слайд-парк</span>
+            Слайд-парк
           </label>
         </li>
         <li class="sights-list__item">
-          <!--Здесь булет реализация кастомных чекбоксов -->
+          <!--Здесь будет реализация кастомных чекбоксов -->
           <label class="sights-list__checkbox">
             <input type="checkbox" name="Red Rock">
-            <span class="sights-list__checkbox-indicator"></span>
-            <span class="sights-list__sight">Красные скалы</span>
+            Красные скалы
           </label>
         </li>
       </ul>
-      <span class="form__title">Опишите свои эмоции:</span>
-      <p>
-        <label for="text-field"></label>
-        <textarea id="text-field" placeholder="Опишите подробно все свои восторги"></textarea>
-      </p>
-      <button class="form__button button">Отправить отзыв</button>
+      <h3 class="form__title">Опишите свои эмоции:</h3>
+      <textarea id="text-field" placeholder="Опишите подробно все свои восторги"></textarea>
+      <button class="form__button button" type="submit">Отправить отзыв</button>
     </form>
   </section>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <span class="page-footer__hashtag">#Visitsedona</span>
+    <div class="page-footer__hashtag">#Visitsedona</div>
     <ul class="page-footer__social social">
       <li class="social__item">
         <a class="social__link social__link--twitter" href="https://twitter.com/sedonaaz">
@@ -152,22 +142,22 @@
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
+      <p class="copyright__text">Разработано:</p>
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </div>
 </footer>
 <!--Попап с ошибкой -->
 <div class="popup-failure">
-  <span class="popup-failure__title">Что-то пошло не так!</span>
-  <span class="popup-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</span>
+  <h3 class="popup-failure__title">Что-то пошло не так!</h3>
+  <p class="popup-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
   <button class="popup-failure__button button">OK</button>
 </div>
 <!-- Попап при отправленном отзыве-->
 <div class="popup-success">
-  <span class="popup-success__title">Ваш отзыв отправлен!</span>
+  <h3 class="popup-success__title">Ваш отзыв отправлен!</h3>
   <p class="popup-success__description">Спасибо за ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-  <button class="popup__success__button button">Закрыть окно</button>
+  <button class="popup-success__button button">Закрыть окно</button>
 </div>
 </body>
 </html>

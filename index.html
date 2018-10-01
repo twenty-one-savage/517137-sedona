@@ -38,44 +38,44 @@
       <ol class="features__list">
         <li class="features__item">
           <h3 class="features__title">Настоящий городок</h3>
-           <span class="features__number">- №1 -</span>
+           <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№1<!--Здесь будет черточка, которая будет реализована через псевдоэлемент --> </div>
           <p class="features__description">Седона не аттракцион для туристов. Там течет своя жизнь</p>
           <img class="features__image" src="#" width="" height="" alt="Фото города Седона">
           <!-- Не совсем уверен в наименовании класса по БЭМ -->
-          <ul class="features__item-list">
-            <li class="features__item">
-              <span class="features__title">Жильё</span>
-              <p class="features__description">Рекомендуем пожить в настоязем мотеле, всё как в кино!</p>
+          <ul class="features__add-list add-list">
+            <li class="add-list__item">
+              <h4 class="add-list__title">Жильё</h4>
+              <p class="add-list__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="features__item">
-              <span class="features__title">Сувениры</span>
-              <p class="features__description">Не только китайского, но и местного производства!</p>
+            <li class="add-list__item">
+              <h4 class="add-list__title">Сувениры</h4>
+              <p class="add-list__description">Не только китайского, но и местного производства!</p>
             </li>
-            <li class="features__item">
-              <span class="features__title">Еда</span>
-              <p class="features__description">Всегда заказыватйе фирменный бургер, вы не разочаруетесь!</p>
+            <li class="add-list__item">
+              <h4 class="add-list__title">Еда</h4>
+              <p class="add-list__description">Всегда заказыватйе фирменный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
         </li>
         <li class="features__item">
-          <span class="features__title">Там есть мост дьявола</span>
-          <span class="features__number">- №2 -</span>
+          <h3 class="features__title">Там есть мост дьявола</h3>
+          <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№2<!--Здесь будет черточка, которая будет реализована через псевдоэлемент --></div>
           <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           <img class="features__image" src="#" width="" height="" alt="Мост Дьявола">
         </li>
         <li class="features__item">
-          <span class="features__title">Небольшая площадь</span>
-          <span class="features__number">- №3 -</span>
+          <h3 class="features__title">Небольшая площадь</h3>
+          <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№3<!--Здесь будет черточка, которая будет реализована через псевдоэлемент --></div>
           <p class="features__description">Все интересные места находятся очень близко</p>
         </li>
         <li class="features__item">
-          <span class="features__title">Красивая дорога</span>
-          <span class="features__number">- №4 -</span>
+          <h3 class="features__title">Красивая дорога</h3>
+          <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№4<!--Здесь будет черточка, которая будет реализована через псевдоэлемент --></div>
           <p class="features__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="features__item">
-          <span class="features__title">Мало туристов</span>
-          <span class="features__number">- №5 -</span>
+          <h3 class="features__title">Мало туристов</h3>
+          <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№5<!--Здесь будет черточка, которая будет реализована через псевдоэлемент --></div>
           <p class="features__description">Большинство едет в Гранд каьон и толпится там</p>
         </li>
       </ol>
@@ -83,13 +83,16 @@
     <section class="hotels">
       <h2 class="hotels__title">Заинтерсовались?</h2>
       <p class="hotels__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="hotels__button button" type="button">Найти гостиницу</button>
+      <a class="hotels__button button" href="#">Найти гостиницу</a>
     </section>
-    <img class="page-main__map-image" src="#" width="" height="" alt="Местонахождение">
+    <section class="page-main__map map">
+      <h2 class="visually-hidden">Местонахождение</h2>
+      <img class="map__image" src="#" width="" height="" alt="Местонахождение">
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-    <span class="page-footer__hashtag">#Visitsedona</span>
+    <div class="page-footer__hashtag">#Visitsedona</div>
     <ul class="page-footer__social social">
       <li class="social__item">
         <a class="social__link social__link--twitter" href="https://twitter.com/sedonaaz">
@@ -108,7 +111,7 @@
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
+      <p class="copyright__text">Разработано:</p>
       <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
     </div>
