@@ -6,58 +6,68 @@
 </head>
 <body>
 <header class="page-header">
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="#" width="" height="" alt="Логотип сайта Седона">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фото и видео</a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a>Форма отзыва</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">HTML Academy</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="centre">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="#" width="" height="" alt="Логотип сайта Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
 <main class="page-form">
   <img class="page-form__image" src="#" width="" height="" alt="Sedona">
-  <h1 class="page-form__title">Оставьте свой отзыв</h1>
-  <p class="page-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+  <div class="centre">
+    <h1 class="page-form__title">Оставьте свой отзыв</h1>
+    <p class="page-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+      достопримечательностях</p>
+  </div>
   <section class="user-form">
-    <h2 class="visually-hidden">Форма отзыва</h2>
-    <form class="user-form form" action="https://echo.htmlacademy.ru" method="get">
-      <h3 class="form__title">Представьтесь:</h3>
-      <p class="form__input-wrapper">
-        <label for="name-field">Имя<sup>*</sup>:</label>
-        <input  name="name" id="name-field" placeholder="Петр" autocomplete="on" required>
-      </p>
-      <p class="form__input-wrapper">
-        <label for="surname-field">Фамилия<sup>*</sup>:</label>
-        <input  name="surname" id="surname-field" placeholder="Иванов" autocomplete="on" required>
-      </p>
-      <p class="form__input-wrapper">
-        <label for="patronymic-field">Отчетсво:</label>
-        <input  name="patronymic" id="patronymic-field" placeholder="Александрович" autocomplete="on">
-      </p>
+    <div class="centre">
+      <h2 class="visually-hidden">Форма отзыва</h2>
+      <form class="user-form form" action="https://echo.htmlacademy.ru" method="get">
+        <h3 class="form__title">Представьтесь:</h3>
+        <p class="form__input-wrapper">
+          <label for="name-field">Имя<sup>*</sup>:</label>
+          <input name="name" id="name-field" placeholder="Петр" autocomplete="on" required>
+        </p>
+        <p class="form__input-wrapper">
+          <label for="surname-field">Фамилия<sup>*</sup>:</label>
+          <input name="surname" id="surname-field" placeholder="Иванов" autocomplete="on" required>
+        </p>
+        <p class="form__input-wrapper">
+          <label for="patronymic-field">Отчетсво:</label>
+          <input name="patronymic" id="patronymic-field" placeholder="Александрович" autocomplete="on">
+        </p>
+    </div>
+    <div class="centre">
       <h3 class="form__title">Контактная информация:</h3>
       <p class="user-form__input-wrapper">
         <label for="phone-field">Контактный телефон<sup>*</sup>:</label>
-        <input  name="phone" id="phone-field" type="number" placeholder="Введите телефон" autocomplete="on" required>
+        <input name="phone" id="phone-field" type="number" placeholder="Введите телефон" autocomplete="on" required>
       </p>
       <p class="form__input-wrapper">
         <label for="email-field">Электронная почта<sup>*</sup>:</label>
-        <input  name="email" id="email-field" type="email" placeholder="Введите e-mail" autocomplete="on" required>
+        <input name="email" id="email-field" type="email" placeholder="Введите e-mail" autocomplete="on" required>
       </p>
+    </div>
+    <div class="centre">
       <h3 class="form__title">Ваше общее впечатление:</h3>
       <!-- Список с рейтингом -->
       <ul class="form__list rating-list">
@@ -83,6 +93,8 @@
           </label>
         </li>
       </ul>
+    </div>
+    <div class="centre">
       <h3 class="form__title">Посещенные достопримечательности:</h3>
       <!-- Список с достопроимечательностями -->
       <ul class="form__list sights-list">
@@ -115,14 +127,19 @@
           </label>
         </li>
       </ul>
-      <h3 class="form__title">Опишите свои эмоции:</h3>
-      <textarea id="text-field" placeholder="Опишите подробно все свои восторги"></textarea>
-      <button class="form__button button" type="submit">Отправить отзыв</button>
+    </div>
+    <div class="form__comment comment">
+      <div class="centre">
+        <h3 class="comment__title">Опишите свои эмоции:</h3>
+        <textarea id="text-field" placeholder="Опишите подробно все свои восторги"></textarea>
+        <button class="comment__button button" type="submit">Отправить отзыв</button>
+      </div>
+    </div>
     </form>
   </section>
 </main>
 <footer class="page-footer">
-  <div class="page-footer__wrapper">
+  <div class="page-footer__wrapper centre">
     <div class="page-footer__hashtag">#Visitsedona</div>
     <ul class="page-footer__social social">
       <li class="social__item">
@@ -151,15 +168,20 @@
 </footer>
 <!--Попап с ошибкой -->
 <div class="popup-failure">
-  <h3 class="popup-failure__title">Что-то пошло не так!</h3>
-  <p class="popup-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-  <button class="popup-failure__button button">OK</button>
+  <div class="centre">
+    <h3 class="popup-failure__title">Что-то пошло не так!</h3>
+    <p class="popup-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="popup-failure__button button">OK</button>
+  </div>
 </div>
 <!-- Попап при отправленном отзыве-->
 <div class="popup-success">
-  <h3 class="popup-success__title">Ваш отзыв отправлен!</h3>
-  <p class="popup-success__description">Спасибо за ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-  <button class="popup-success__button button">Закрыть окно</button>
+  <div class="centre">
+    <h3 class="popup-success__title">Ваш отзыв отправлен!</h3>
+    <p class="popup-success__description">Спасибо за ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы
+      опубликуем его на сайте.</p>
+    <button class="popup-success__button button">Закрыть окно</button>
+  </div>
 </div>
 </body>
 </html>
