@@ -1,8 +1,28 @@
 .main-nav {
+  width: 320px;
+  min-height: 223px;
+
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.main-nav__list {
+  .reset-list();
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: @tablet-width;
+    min-height: 56px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: @desktop-width;
+  }
 }

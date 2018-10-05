@@ -1,8 +1,22 @@
 .sights-list {
   width: 100%;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  background-color: #ffffff;
+  .reset-list();
+  padding-top: 20px;
+  .font-18-26-700();
+  color: @black;
+  background-color: @white;
 }
+
+.sights-list__title {
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  .font-18-26-700();
+}
+
+.sights-list__checkbox {
+  text-transform: none;
+}
+
+
+/*Этому блоку можно добавить border-top и border-bottom чтобы получились черточки между блоками, как в макете*/

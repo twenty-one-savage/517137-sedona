@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>"Седона"</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="../node_modules/normalize.css/normalize.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
@@ -35,13 +36,13 @@
 <main class="page-main">
   <img class="page-main__image" src="#" width="" height="" alt="Sedona">
   <div class="centre">
-    <h1 class="page-main__title">Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
+    <h1 class="page-main__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
     <p class="page-main__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   </div>
   <section class="features">
     <h2 class="visually-hidden">Особенности</h2>
     <ol class="features__list">
-      <li class="features__item">
+      <li class="features__item features__item--blue-background">
         <div class="centre">
           <h3 class="features__title">Настоящий городок</h3>
           <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№1
@@ -50,7 +51,7 @@
         </div>
         <img class="features__image" src="#" width="" height="" alt="Фото города Седона">
         <!-- Не совсем уверен в наименовании класса по БЭМ -->
-        <ul class="features__add-list add-list">
+        <ul class="features__list add-list">
           <div class="centre">
             <li class="add-list__item">
               <h4 class="add-list__title">Жильё</h4>
@@ -67,7 +68,7 @@
           </div>
         </ul>
       </li>
-      <li class="features__item">
+      <li class="features__item features__item--blue-background">
         <div class="centre">
           <h3 class="features__title">Там есть мост дьявола</h3>
           <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№2
@@ -135,11 +136,9 @@
         </a>
       </li>
     </ul>
-    <div class="page-footer__copyright copyright">
-      <div class="copyright__developer developer">
-        <b>Разработано:</b>
-        <a class="developer__button button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <div class="copyright__developer developer">
+      <b class="developer__text">Разработано</b>
+      <a class="developer__button button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </div>
 </footer>

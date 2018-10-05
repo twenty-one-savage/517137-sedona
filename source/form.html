@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>"Седона : Отзывы"</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="../node_modules/normalize.css/normalize.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
@@ -42,36 +43,40 @@
   <section class="user-form">
     <div class="centre">
       <h2 class="visually-hidden">Форма отзыва</h2>
-      <form class="user-form form" action="https://echo.htmlacademy.ru" method="get">
-        <h3 class="form__title">Представьтесь:</h3>
-        <p class="form__input-wrapper">
-          <label for="name-field">Имя<sup>*</sup>:</label>
-          <input name="name" id="name-field" placeholder="Петр" autocomplete="on" required>
-        </p>
-        <p class="form__input-wrapper">
-          <label for="surname-field">Фамилия<sup>*</sup>:</label>
-          <input name="surname" id="surname-field" placeholder="Иванов" autocomplete="on" required>
-        </p>
-        <p class="form__input-wrapper">
-          <label for="patronymic-field">Отчетсво:</label>
-          <input name="patronymic" id="patronymic-field" placeholder="Александрович" autocomplete="on">
-        </p>
+      <form class="user-form__form form" action="https://echo.htmlacademy.ru" method="get">
+        <ul class="form__list fullname">
+          <h3 class="fullname__title">Представьтесь:</h3>
+          <li class="fullname__item">
+            <label class="fullname__label" for="name-field">Имя<sup>*</sup>:</label>
+            <input class="fullname__input" type="text" name="name" id="name-field" placeholder="Петр" autocomplete="on" required>
+          </li>
+          <li class="fullname__item">
+            <label class="fullname__label" for="surname-field">Фамилия<sup>*</sup>:</label>
+            <input class="fullname__input" type="text" name="surname" id="surname-field" placeholder="Иванов" autocomplete="on" required>
+          </li>
+          <li class="fullname__item">
+            <label class="fullname__label" for="patronymic-field">Отчетсво:</label>
+            <input class="fullname__input" type="text" name="patronymic" id="patronymic-field" placeholder="Александрович" autocomplete="on">
+          </li>
+        </ul>
     </div>
     <div class="centre">
-      <h3 class="form__title">Контактная информация:</h3>
-      <p class="user-form__input-wrapper">
-        <label for="phone-field">Контактный телефон<sup>*</sup>:</label>
-        <input name="phone" id="phone-field" type="number" placeholder="Введите телефон" autocomplete="on" required>
-      </p>
-      <p class="form__input-wrapper">
-        <label for="email-field">Электронная почта<sup>*</sup>:</label>
-        <input name="email" id="email-field" type="email" placeholder="Введите e-mail" autocomplete="on" required>
-      </p>
+      <ul class="form__list contacts">
+        <h3 class="contacts__title">Контактная информация:</h3>
+        <li class="contacts__item">
+          <label class="contacts__label" for="phone-field">Контактный телефон<sup>*</sup>:</label>
+          <input class="contacts__input" name="phone" id="phone-field" type="number" placeholder="Введите телефон" autocomplete="on" required>
+        </li>
+        <li class="contacts__item">
+          <label class="contacts__label" for="email-field">Электронная почта<sup>*</sup>:</label>
+          <input class="contacts__input" name="email" id="email-field" type="email" placeholder="Введите e-mail" autocomplete="on" required>
+        </li>
+      </ul>
     </div>
     <div class="centre">
-      <h3 class="form__title">Ваше общее впечатление:</h3>
       <!-- Список с рейтингом -->
       <ul class="form__list rating-list">
+        <h3 class="rating-list__title">Ваше общее впечатление:</h3>
         <li class="rating-list__item">
           <!--Здесь будет реализация кастомных чекбоксов -->
           <label class="rating-list__checkbox">
@@ -96,9 +101,9 @@
       </ul>
     </div>
     <div class="centre">
-      <h3 class="form__title">Посещенные достопримечательности:</h3>
       <!-- Список с достопроимечательностями -->
       <ul class="form__list sights-list">
+        <h3 class="sights-list__title">Посещенные достопримечательности:</h3>
         <li class="sights-list__item">
           <!--Здесь будет реализация кастомных чекбоксов -->
           <label class="sights-list__checkbox">
@@ -122,7 +127,7 @@
         </li>
         <li class="sights-list__item">
           <!--Здесь будет реализация кастомных чекбоксов -->
-          <label class="sights-list__checkbox">
+          <label  class="sights-list__checkbox">
             <input type="checkbox" name="Red Rock">
             Красные скалы
           </label>
@@ -132,10 +137,10 @@
     <div class="form__comment comment">
       <div class="centre">
         <h3 class="comment__title">Опишите свои эмоции:</h3>
-        <textarea id="text-field" placeholder="Опишите подробно все свои восторги"></textarea>
-        <button class="comment__button button" type="submit">Отправить отзыв</button>
+        <textarea class="comment__textarea" id="text-field" placeholder="Опишите подробно все свои восторги"></textarea>
       </div>
     </div>
+    <button class="form__button button" type="submit">Отправить отзыв</button>
     </form>
   </section>
 </main>
@@ -159,11 +164,9 @@
         </a>
       </li>
     </ul>
-    <div class="page-footer__copyright copyright">
-      <div class="copyright__developer developer">
-        <b>Разработано:</b>
-        <a class="developer__button button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <div class="copyright__developer developer">
+      <b class="developer__text">Разработано</b>
+      <a class="developer__button button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </div>
 </footer>
