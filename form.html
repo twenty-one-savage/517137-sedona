@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>"Седона : Отзывы"</title>
+</head>
+<body>
+<header class="page-header">
+  <a class="page-header__logo" href="index.html">
+    <img class="page-header__logo-image" src="#" width="" height="" alt="Логотип сайта Седона">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">Фото и видео</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a>Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="page-form">
+  <img class="page-form__image" src="#" width="" height="" alt="Sedona">
+  <h1 class="page-form__title">Оставьте свой отзыв</h1>
+  <p class="page-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+  <section class="user-form">
+    <h2 class="visually-hidden">Форма отзыва</h2>
+    <form class="user-form form" action="https://echo.htmlacademy.ru" method="get">
+      <h3 class="form__title">Представьтесь:</h3>
+      <p class="form__input-wrapper">
+        <label for="name-field">Имя<sup>*</sup>:</label>
+        <input  name="name" id="name-field" placeholder="Петр" autocomplete="on" required>
+      </p>
+      <p class="form__input-wrapper">
+        <label for="surname-field">Фамилия<sup>*</sup>:</label>
+        <input  name="surname" id="surname-field" placeholder="Иванов" autocomplete="on" required>
+      </p>
+      <p class="form__input-wrapper">
+        <label for="patronymic-field">Отчетсво:</label>
+        <input  name="patronymic" id="patronymic-field" placeholder="Александрович" autocomplete="on">
+      </p>
+      <h3 class="form__title">Контактная информация:</h3>
+      <p class="user-form__input-wrapper">
+        <label for="phone-field">Контактный телефон<sup>*</sup>:</label>
+        <input  name="phone" id="phone-field" type="number" placeholder="Введите телефон" autocomplete="on" required>
+      </p>
+      <p class="form__input-wrapper">
+        <label for="email-field">Электронная почта<sup>*</sup>:</label>
+        <input  name="email" id="email-field" type="email" placeholder="Введите e-mail" autocomplete="on" required>
+      </p>
+      <h3 class="form__title">Ваше общее впечатление:</h3>
+      <!-- Список с рейтингом -->
+      <ul class="form__list rating-list">
+        <li class="rating-list__item">
+          <!--Здесь будет реализация кастомных чекбоксов -->
+          <label class="rating-list__checkbox">
+            <input type="radio" name="feeling" value="positive" checked>
+            Скорее положительное
+          </label>
+        </li>
+        <li class="rating-list__item">
+          <!--Здесь будет реализация кастомных чекбоксов -->
+          <label class="rating-list__checkbox">
+            <input type="radio" name="feeling" value="negative">
+            Скорее отрицательное
+          </label>
+        </li>
+        <li class="rating-list__item">
+          <!--Здесь будет реализация кастомных чекбоксов -->
+          <label class="rating-list__checkbox">
+            <input type="radio" name="feeling" value="neutral">
+            Затрудняюсь ответить
+          </label>
+        </li>
+      </ul>
+      <h3 class="form__title">Посещенные достопримечательности:</h3>
+      <!-- Список с достопроимечательностями -->
+      <ul class="form__list sights-list">
+        <li class="sights-list__item">
+          <!--Здесь будет реализация кастомных чекбоксов -->
+          <label class="sights-list__checkbox">
+            <input type="checkbox" name="Devil's Bridge" checked>
+            Мост Дьявола
+          </label>
+        </li>
+        <li class="sights-list__item">
+          <!--Здесь будет реализация кастомных чекбоксов -->
+          <label class="sights-list__checkbox">
+            <input type="checkbox" name="Bell Rock" checked>
+            Гора-Колокол
+          </label>
+        </li>
+        <li class="sights-list__item">
+          <!--Здесь будет реализация кастомных чекбоксов -->
+          <label class="sights-list__checkbox">
+            <input type="checkbox" name="Slide Park" checked>
+            Слайд-парк
+          </label>
+        </li>
+        <li class="sights-list__item">
+          <!--Здесь будет реализация кастомных чекбоксов -->
+          <label class="sights-list__checkbox">
+            <input type="checkbox" name="Red Rock">
+            Красные скалы
+          </label>
+        </li>
+      </ul>
+      <h3 class="form__title">Опишите свои эмоции:</h3>
+      <textarea id="text-field" placeholder="Опишите подробно все свои восторги"></textarea>
+      <button class="form__button button" type="submit">Отправить отзыв</button>
+    </form>
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__hashtag">#Visitsedona</div>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="https://twitter.com/sedonaaz">
+          Мы в Твиттере
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/VisitSedona/">
+          Мы в Фейсбуке
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/visitsedona">
+          Мы в Инстаграме
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </div>
+</footer>
+<!--Попап с ошибкой -->
+<div class="popup-failure">
+  <h3 class="popup-failure__title">Что-то пошло не так!</h3>
+  <p class="popup-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <button class="popup-failure__button button">OK</button>
+</div>
+<!-- Попап при отправленном отзыве-->
+<div class="popup-success">
+  <h3 class="popup-success__title">Ваш отзыв отправлен!</h3>
+  <p class="popup-success__description">Спасибо за ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+  <button class="popup-success__button button">Закрыть окно</button>
+</div>
+</body>
+</html>
