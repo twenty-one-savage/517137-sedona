@@ -1,47 +1,5 @@
 @import "normalize.less";
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src:  url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-body {
-  font-family: "PT Sans", "Tahoma", sans-serif;
-  text-transform: uppercase;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+@import "blocks/global";
 @import "blocks/variable";
 @import "blocks/mixin";
 @import "blocks/page-header";
@@ -52,14 +10,12 @@ input[type="radio"].visually-hidden {
 @import "blocks/add-list";
 @import "blocks/hotels";
 @import "blocks/map";
-@import "blocks/page-footer";
 @import "blocks/social";
 @import "blocks/developer";
+@import "blocks/page-footer";
 @import "blocks/page-photo";
 @import "blocks/photo-gallery";
 @import "blocks/video-presentation";
-@import "blocks/page-form";
-@import "blocks/user-form";
 @import "blocks/rating-list";
 @import "blocks/centre";
 @import "blocks/form";
@@ -70,3 +26,5 @@ input[type="radio"].visually-hidden {
 @import "blocks/like";
 @import "blocks/popup-failure";
 @import "blocks/popup-success";
+@import "blocks/page-form";
+@import "blocks/user-form";
