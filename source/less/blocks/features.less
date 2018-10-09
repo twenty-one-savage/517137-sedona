@@ -1,0 +1,28 @@
+.features {
+  width: 320px;
+  background-color: @white;
+}
+
+.features__list {
+  .reset-list();
+  background-color: #eeeeee;
+}
+
+.features__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: @black;
+}
+
+.features__item {
+  &--blue-background {
+    color: @white;
+    background-color: @blue;
+  }
+
+  &--blue-background .features__title {
+    color: @white;
+  }
+}
