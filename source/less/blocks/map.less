@@ -1,4 +1,15 @@
 .map {
   width: 320px;
-  margin-bottom: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    width: @desktop-width;
+  }
 }

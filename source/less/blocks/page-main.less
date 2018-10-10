@@ -1,5 +1,6 @@
 .page-main {
   width: 320px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -17,8 +18,62 @@
 
 .page-main__title {
   .font-18-26-700();
+  color: @black;
+  text-align: center;
 }
 
 .page-main__text {
   line-height: 26px;
+  text-align: center;
+}
+
+.page-main__map {
+  margin-bottom: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: @tablet-width;
+  }
+
+  .page-main__bg {
+    width: 766px;
+    height: 518px;
+  }
+
+  .page-main__title {
+    width: 442px;
+    margin-left: 164px;
+  }
+
+  .page-main__text {
+    margin-left: 139px;
+  }
+
+  .page-main .features {
+    margin-top: 50px;
+  }
+
+  .page-main__map {
+    margin-bottom: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: @desktop-width;
+  }
+
+  .page-main__bg {
+    width: @desktop-width;
+  }
+
+  .page-main__title {
+    margin-left: 382px;
+  }
+
+  .page-main__text {
+    width: 495px;
+    margin-left: 354px;
+  }
 }

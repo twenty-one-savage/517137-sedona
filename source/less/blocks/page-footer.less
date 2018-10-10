@@ -1,5 +1,6 @@
 .page-footer {
   width: 320px;
+  margin: 0 auto;
   background-color: @white;
 }
 
@@ -21,4 +22,37 @@
 
 .page-footer__developer {
   margin-bottom: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+  }
+
+  .page-footer__hashtag {
+    margin-right: 112px;
+  }
+
+  .page-footer .social {
+    margin-right: 120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 960px;
+  }
+
+  .page-footer__hashtag {
+    margin-right: 269px;
+  }
+
+  .page-footer .social {
+    margin-right: 276px;
+  }
 }

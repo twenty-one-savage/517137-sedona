@@ -1,7 +1,6 @@
 .hotels {
   width: 280px;
   padding-top: 30px;
-  padding-left: 10px;
   margin-bottom: 50px;
 }
 
@@ -14,4 +13,45 @@
 
 .hotels__description {
   margin-bottom: 35px;
+}
+
+.hotels__button {
+  min-width: 280px;
+  padding: 17px 47px;
+  background-color: @blue;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .hotels {
+    width: 728px;
+    margin-bottom: 60px;
+  }
+
+  .hotels .centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .hotels__description {
+    max-width: 490px;
+    text-align: center;
+  }
+
+  .hotels__button {
+    min-width: 458px;
+    padding: 17px 136px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hotels {
+    width: 1160px;
+  }
 }
