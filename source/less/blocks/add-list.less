@@ -28,6 +28,14 @@
     width: @tablet-width;
   }
 
+  .add-list .centre {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto;
+    width: @tablet-width;
+  }
+
   .add-list__item {
     width: 256px;
   }
@@ -44,13 +52,6 @@
     order: 2;
   }
 
-  .add-list .centre {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    width: @tablet-width;
-  }
-
   .add-list__title {
     text-align: center;
     margin: 0;
@@ -58,8 +59,7 @@
   }
 
   .add-list__description {
-    margin: 0;
-    margin-left: 40px;
+    margin: 0 auto;
     text-align: center;
     max-width: 165px;
   }
@@ -72,5 +72,13 @@
 
   .add-list .centre {
     width: @desktop-width;
+  }
+
+  .add-list__item {
+    width: 400px;
+  }
+
+  .add-list__description {
+    max-width: 285px;
   }
 }
