@@ -26,3 +26,30 @@
 .comment__textarea::placeholder {
   color: @black;
 }
+
+@media (min-width: @tablet-width) {
+  .comment {
+    order: 5;
+    width: 648px;
+  }
+
+  .comment__title {
+    margin-bottom: 57px;
+  }
+
+  .comment__textarea {
+    margin-bottom: 58px;
+    width: 648px;
+    border: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment {
+    width: 960px;
+  }
+
+  .comment__textarea {
+    width: 960px;
+  }
+}

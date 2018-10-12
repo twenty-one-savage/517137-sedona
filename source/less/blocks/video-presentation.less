@@ -1,10 +1,47 @@
 .video-presentation {
+  margin: 0 auto;
   width: 320px;
-  padding-left: 23px;
 }
 
 .video-presentation__title {
+  text-align: center;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .video-presentation {
+    padding: 0;
+    width: 648px;
+  }
+
+  .video-presentation .centre {
+    width: 648px;
+  }
+
+  .video-presentation__title {
+    font-size: 30px;
+    line-height: 26px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    max-width: 400px;
+  }
+
+  .video-presentation__description {
+    margin: 0 auto;
+    max-width: 444px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-presentation {
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  .video-presentation .centre {
+    width: 800px;
+  }
 }

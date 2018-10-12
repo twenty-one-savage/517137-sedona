@@ -20,3 +20,33 @@
 
 
 //TODO : Этому блоку можно добавить border-top и border-bottom чтобы получились черточки между блоками, как в макете
+
+
+@media (min-width: @tablet-width) {
+  .rating-list {
+    order: 1;
+    width: 324px;
+  }
+
+  .rating-list .centre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 324px;
+  }
+
+  .rating-list__item {
+    width: 324px;
+  }
+
+  .rating-list__title {
+    margin-bottom: 58px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rating-list {
+    width: 480px;
+  }
+}

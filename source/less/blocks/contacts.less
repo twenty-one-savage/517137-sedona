@@ -26,7 +26,75 @@
 }
 
 .contacts__input::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
   color: @black;
 }
 
 // TODO : Этому блоку можно добавить border-top и border-bottom чтобы получились черточки между блоками, как в макете
+
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    order: 3;
+    padding: 0;
+    width: 648px;
+    margin-bottom: 55px;
+  }
+
+  .contacts .centre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 600px;
+  }
+
+  .contacts__label {
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+
+  .contacts__input {
+    width: 648px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 960px;
+  }
+
+  .contacts .centre {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 480px;
+  }
+
+  .contacts__title {
+    width: 960px;
+  }
+
+  .contacts__label {
+    padding: 0;
+    margin-right: 16px;
+    min-width: 70px;
+  }
+
+  .contacts__input {
+    width: 315px;
+  }
+}

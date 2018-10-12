@@ -1,4 +1,5 @@
 .page-form {
+  margin: 0 auto;
   width: 320px;
   font-size: 18px;
   line-height: 26px;
@@ -13,15 +14,18 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 80%;
+  background-size: cover;
 }
 
 .page-form__title {
+  text-align: center;
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
 }
 
 .page-form__text {
+  text-align: center;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -30,5 +34,39 @@
 @media (min-width: @tablet-width) {
   .page-form {
     width: @tablet-width;
+  }
+
+  .page-form__bg {
+    margin-bottom: 75px;
+    width: @tablet-width;
+    height: 290px;
+  }
+
+  .page-form__title {
+    margin: 0 auto;
+    margin-bottom: 35px;
+    max-width: 330px;
+  }
+
+  .page-form__text {
+    margin: 0 auto;
+    max-width: 441px;
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-form {
+    width: @desktop-width;
+  }
+
+  .page-form__bg {
+    margin-bottom: 110px;
+    width: @desktop-width;
+    height: 301px;
+  }
+
+  .page-form__text {
+    margin-bottom: 63px;
   }
 }
