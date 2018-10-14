@@ -12,7 +12,7 @@
     <img class="page-header__logo-image" src="#" width="" height="" alt="Логотип Седона">
   </a>
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <button class="main-nav__close" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item site-list__item--active">
         <a>Главная</a>
@@ -28,12 +28,15 @@
       </li>
     </ul>
   </nav>
+  <div class="page-header__burger burger">
+    <svg class="burger__icon" width="25" height="25"></svg>
+  </div>
 </header>
 <main class="page-main">
   <div class="page-main__bg">
     <img class="page-main__image" src="#" width="" height="" alt="Sedona">
   </div>
-  <div class="centre">
+  <div class="page-main__wrapper centre">
     <h1 class="page-main__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
     <p class="page-main__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   </div>
@@ -41,7 +44,7 @@
     <h2 class="visually-hidden">Особенности</h2>
     <ol class="features__list">
       <li class="features__item features__item--blue-background">
-        <div class="centre">
+        <div class="features__wrapper centre">
           <h3 class="features__title">Настоящий городок</h3>
           <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№1
             <!--Здесь будет черточка, которая будет реализована через псевдоэлемент --> </div>
@@ -50,7 +53,7 @@
         <img class="features__image" src="#" width="" height="" alt="Фото города Седона">
         <!-- Не совсем уверен в наименовании класса по БЭМ -->
         <ul class="features__list add-list">
-          <div class="centre">
+          <div class="add-list__wrapper centre">
             <li class="add-list__item">
               <h4 class="add-list__title">Жильё</h4>
               <p class="add-list__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -67,7 +70,7 @@
         </ul>
       </li>
       <li class="features__item features__item--blue-background">
-        <div class="centre">
+        <div class="features__wrapper centre">
           <h3 class="features__title">Там есть мост дьявола</h3>
           <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№2
             <!--Здесь будет черточка, которая будет реализована через псевдоэлемент --></div>
@@ -76,7 +79,7 @@
         <img class="features__image" src="#" width="" height="" alt="Мост Дьявола">
       </li>
       <li class="features__item">
-        <div class="centre">
+        <div class="features__wrapper centre">
           <h3 class="features__title">Небольшая площадь</h3>
           <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№3
             <!--Здесь будет черточка, которая будет реализована через псевдоэлемент --></div>
@@ -84,7 +87,7 @@
         </div>
       </li>
       <li class="features__item">
-        <div class="centre">
+        <div class="features__wrapper centre">
           <h3 class="features__title">Красивая дорога</h3>
           <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№4
             <!--Здесь будет черточка, которая будет реализована через псевдоэлемент --></div>
@@ -92,7 +95,7 @@
         </div>
       </li>
       <li class="features__item">
-        <div class="centre">
+        <div class="features__wrapper centre">
           <h3 class="features__title">Мало туристов</h3>
           <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№5
             <!--Здесь будет черточка, которая будет реализована через псевдоэлемент --></div>
@@ -102,7 +105,7 @@
     </ol>
   </section>
   <section class="hotels">
-    <div class="centre">
+    <div class="hotels__wrapper centre">
       <h2 class="hotels__title">Заинтерсовались?</h2>
       <p class="hotels__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>

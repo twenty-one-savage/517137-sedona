@@ -18,9 +18,10 @@
   margin-left: 20px;
   padding: 16px 48px;
   width: 280px;
-  color: @white;
-  text-transform: uppercase;
-  background-color: @blue;
+}
+
+.form__note {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -45,6 +46,7 @@
   }
 
   .form__note {
+    display: block;
     order: 8;
     width: 197px;
     font-size: 14px;
@@ -60,6 +62,10 @@
     width: 960px;
   }
 
+  .form__list.rating-list {
+    margin-right: 160px;
+  }
+
   .form__wrapper {
     width: 960px;
   }
@@ -69,6 +75,7 @@
   }
 
   .form__note {
+    display: block;
     width: 280px;
   }
 }

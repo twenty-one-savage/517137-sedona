@@ -1,5 +1,4 @@
 .sights-list {
-  width: 320px;
   .reset-list();
   padding-top: 20px;
   .font-18-26-700();
@@ -25,7 +24,6 @@
   .sights-list {
     order: 4;
     padding: 0;
-    width: 648px;
     margin-bottom: 71px;
   }
 
@@ -36,7 +34,7 @@
 
   .sights-list__item {
     width: 324px;
-    box-sizing: border-box;
+    margin-bottom: 32px;
   }
 
   .sights-list__item input {
@@ -60,8 +58,7 @@
   }
 
   .sights-list__title {
-    margin: 0 auto;
-    max-width: 300px;
+    padding: 0 185px;
     margin-bottom: 43px;
   }
 }
@@ -69,7 +66,6 @@
 @media (min-width: @desktop-width) {
   .sights-list {
     margin-bottom: 68px;
-    width: 960px;
   }
 
   .sights-list__item {
@@ -90,5 +86,9 @@
 
   .sights-list__item:nth-child(4n) {
     padding-left: 0;
+  }
+
+  .sights-list__title {
+    padding: 0 340px;
   }
 }

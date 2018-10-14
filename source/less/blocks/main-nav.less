@@ -1,15 +1,12 @@
 .main-nav {
   position: relative;
-  width: 320px;
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
   color: @white;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
-.main-nav__toggle {
+.main-nav__close {
   position: absolute;
   top: 12px;
   left: 278px;
@@ -45,25 +42,30 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    width: @tablet-width;
     color: @black;
-    min-height: 56px;
   }
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 49px;
-    width: 693px;
     font-size: 14px;
     line-height: 26px;
     color: @black;
     background-color: @white;
   }
+
+  .main-nav__close {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    width: @desktop-width;
+  }
+
   .main-nav__list {
     margin-left: 91px;
-    width: 1060px;
   }
 }

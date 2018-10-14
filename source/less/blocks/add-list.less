@@ -1,5 +1,4 @@
 .add-list {
-  width: 320px;
   padding-top: 26px;
   padding-left: 50px;
   padding-bottom: 50px;
@@ -7,6 +6,10 @@
   background-color: @white;
   text-align: left;
   box-sizing: border-box;
+}
+
+.add-list__wrapper {
+  width: 270px;
 }
 
 .add-list__title {
@@ -23,20 +26,19 @@
   .add-list {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 162px;
-    padding-left: 0;
+    padding: 0;
     width: @tablet-width;
   }
 
-  .add-list .centre {
+  .add-list__wrapper {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0 auto;
     width: @tablet-width;
   }
 
   .add-list__item {
+    padding: 164px 47px 64px 47px;
     width: 256px;
   }
 
@@ -59,9 +61,8 @@
   }
 
   .add-list__description {
-    margin: 0 auto;
     text-align: center;
-    max-width: 165px;
+    margin: 0;
   }
 }
 
@@ -70,11 +71,12 @@
     width: @desktop-width;
   }
 
-  .add-list .centre {
+  .add-list__wrapper{
     width: @desktop-width;
   }
 
   .add-list__item {
+    padding: 164px 73px 85px 73px;
     width: 400px;
   }
 

@@ -1,5 +1,4 @@
 .fullname {
-  width: 320px;
   .reset-list();
   padding-top: 20px;
   padding-bottom: 25px;
@@ -20,7 +19,7 @@
 }
 
 .fullname__input {
-  padding: 18px 22px 22px 22px;
+  padding: 16px 20px;
   background-color: #f2f2f2;
   border: 0;
 }
@@ -38,12 +37,11 @@
     width: 324px;
     padding: 0;
     padding-left: 55px;
-    margin-bottom: 70px;
     box-sizing: border-box;
   }
 
-  .fullname .centre {
-    width: 324px;
+  .fullname__wrapper {
+    width: 267px;
   }
 
   .fullname__item {
@@ -72,6 +70,11 @@
 
 @media (min-width: @desktop-width) {
   .fullname {
-    width: 480px;
+    padding: 0;
+    width: 400px;
+  }
+
+  .fullname__wrapper {
+    width: 400px;
   }
 }
