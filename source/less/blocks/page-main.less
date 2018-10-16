@@ -9,10 +9,12 @@
 }
 
 .page-main__bg {
-  padding: 90px 20px 85px 20px;
+  padding-top: 90px;
+  padding-bottom: 85px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  text-align: center;
 }
 
 .page-main__title {
@@ -36,18 +38,17 @@
   }
 
   .page-main__bg {
-    padding: 77px 153px 91px 153px;
+    padding-top: 77px;
+    padding-bottom: 91px;
     background-size: cover;
   }
 
   .page-main__wrapper {
-    padding: 58px 78px;
+    padding: 58px 125px;
     width: @tablet-width;
   }
 
   .page-main__title {
-    width: 442px;
-    margin: 0 auto;
     margin-bottom: 30px;
   }
 
@@ -59,15 +60,11 @@
 @media (min-width: @desktop-width) {
   .page-main {
     width: @desktop-width;
+    box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
   }
 
   .page-main__wrapper {
-    padding: 52px 234px;
+    padding: 52px 350px;
     width: @desktop-width;
-  }
-
-  .page-main__bg {
-    padding: 77px 250px 91px 250px;
-    background-size: cover;
   }
 }

@@ -5,10 +5,6 @@
   background-color: @white;
 }
 
-.page-header .centre {
-  margin: 0;
-}
-
 .page-header__logo {
   position: absolute;
   top: 257px;
@@ -24,7 +20,7 @@
 }
 
 .page-header__burger {
-  margin-left: 277px;
+  text-align: right;
   padding: 17px 0;
 }
 
@@ -47,6 +43,7 @@
 @media (min-width: @desktop-width) {
   .page-header {
     width: @desktop-width;
+    box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
   }
 
   .page-header__logo {

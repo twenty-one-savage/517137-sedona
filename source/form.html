@@ -9,7 +9,7 @@
 <body>
 <header class="page-header">
   <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="#" width="" height="" alt="Логотип сайта Седона">
+    <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта Седона">
   </a>
   <nav class="main-nav">
     <button class="main-nav__close" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -30,13 +30,19 @@
       </ul>
     </div>
   </nav>
-  <div class="page-header__burger burger">
-    <svg class="burger__icon" width="25" height="25"></svg>
+  <div class="page-header__burger burger centre">
+    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+      <g>
+        <rect width="22.928" height="3.964"/>
+        <rect y="9.009" width="22.928" height="3.964"/>
+        <rect y="18.018" width="22.928" height="3.964"/>
+      </g>
+    </svg>
   </div>
 </header>
 <main class="page-form">
   <div class="page-form__bg">
-    <img class="page-form__image" src="#" width="" height="" alt="Sedona">
+    <img class="page-form__image" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
   </div>
   <div class="page-form__wrapper centre">
     <h1 class="page-form__title">Оставьте свой отзыв</h1>
@@ -51,18 +57,15 @@
           <h3 class="fullname__title">Представьтесь:</h3>
           <li class="fullname__item">
             <label class="fullname__label" for="name-field">Имя<sup>*</sup>:</label>
-            <input class="fullname__input" type="text" name="name" id="name-field" placeholder="Петр" autocomplete="on"
-                   required>
+            <input class="fullname__input" type="text" name="name" id="name-field" placeholder="Петр" autocomplete="on" required>
           </li>
           <li class="fullname__item">
             <label class="fullname__label" for="surname-field">Фамилия<sup>*</sup>:</label>
-            <input class="fullname__input" type="text" name="surname" id="surname-field" placeholder="Иванов"
-                   autocomplete="on" required>
+            <input class="fullname__input" type="text" name="surname" id="surname-field" placeholder="Иванов" autocomplete="on" required>
           </li>
           <li class="fullname__item">
             <label class="fullname__label" for="patronymic-field">Отчетсво:</label>
-            <input class="fullname__input" type="text" name="patronymic" id="patronymic-field"
-                   placeholder="Александрович" autocomplete="on">
+            <input class="fullname__input" type="text" name="patronymic" id="patronymic-field" placeholder="Александрович" autocomplete="on">
           </li>
         </div>
       </ul>
@@ -70,14 +73,12 @@
         <div class="contacts__wrapper centre">
           <h3 class="contacts__title">Контактная информация:</h3>
           <li class="contacts__item">
-            <label class="contacts__label" for="phone-field">Телефон<sup>*</sup>:</label>
-            <input class="contacts__input" name="phone" id="phone-field" type="number" placeholder="Введите телефон"
-                   autocomplete="on" required>
+            <label class="contacts__label" for="phone-field"><span class="contacts__word">Контактный</span>телефон<sup>*</sup>:</label>
+            <input class="contacts__input" name="phone" id="phone-field" type="number" placeholder="Введите телефон" autocomplete="on" required>
           </li>
           <li class="contacts__item">
             <label class="contacts__label" for="email-field">Электронная почта<sup>*</sup>:</label>
-            <input class="contacts__input" name="email" id="email-field" type="email" placeholder="Введите e-mail"
-                   autocomplete="on" required>
+            <input class="contacts__input" name="email" id="email-field" type="email" placeholder="Введите e-mail" autocomplete="on" required>
           </li>
         </div>
       </ul>
@@ -147,8 +148,7 @@
       <div class="form__comment comment">
         <div class="comment__wrapper centre">
           <h3 class="comment__title">Опишите свои эмоции:</h3>
-          <textarea class="comment__textarea" id="text-field"
-                    placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="comment__textarea" id="text-field" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
       </div>
       <div class="form__wrapper">

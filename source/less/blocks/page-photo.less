@@ -8,10 +8,12 @@
 }
 
 .page-photo__bg {
-  padding: 52px 45px 67px 45px;
+  padding-top: 52px;
+  padding-bottom: 67px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 80%;
+  text-align: center;
 }
 
 .page-photo__title {
@@ -21,8 +23,6 @@
 }
 
 .page-photo__text {
-  margin: 0 auto;
-  max-width: 270px;
   text-align: center;
 }
 
@@ -32,8 +32,8 @@
   }
 
   .page-photo__bg {
-    padding: 95px 156px 118px 156px;
-    margin: 0 auto;
+    padding-top: 95px;
+    padding-bottom: 118px;
     background-position: 100% 100%;
   }
 
@@ -44,20 +44,21 @@
   .page-photo__title {
     margin-bottom: 30px;
   }
-
-  .page-photo__text {
-    max-width: 435px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .page-photo {
     width: @desktop-width;
+    box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
   }
 
   .page-photo__bg {
-    padding: 104px 370px 122px 370px;
-    margin-bottom: 115px;
+    padding-top: 104px;
+    padding-bottom: 122px;
     background-size: cover;
+  }
+
+  .page-photo__wrapper {
+    padding: 71px 260px;
   }
 }

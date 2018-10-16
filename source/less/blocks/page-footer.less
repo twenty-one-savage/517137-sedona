@@ -28,12 +28,13 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    width: 648px;
+    width: @tablet-width;
   }
 
   .page-footer__wrapper {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .page-footer__hashtag {
@@ -47,7 +48,8 @@
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    width: 960px;
+    width: @desktop-width;
+    box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
   }
 
   .page-footer__hashtag {
