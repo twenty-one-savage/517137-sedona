@@ -1,5 +1,4 @@
 .rating-list {
-  width: 320px;
   .reset-list();
   padding-bottom: 27px;
   .font-18-26-700();
@@ -20,3 +19,32 @@
 
 
 //TODO : Этому блоку можно добавить border-top и border-bottom чтобы получились черточки между блоками, как в макете
+
+
+@media (min-width: @tablet-width) {
+  .rating-list {
+    order: 1;
+    width: 324px;
+  }
+
+  .rating-list__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+  }
+
+  .rating-list__item {
+    width: 324px;
+  }
+
+  .rating-list__title {
+    margin-bottom: 58px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rating-list {
+    width: 400px;
+  }
+}

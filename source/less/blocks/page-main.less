@@ -1,5 +1,6 @@
 .page-main {
   width: 320px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -8,17 +9,62 @@
 }
 
 .page-main__bg {
-  width: 320px;
-  height: 360px;
+  padding-top: 90px;
+  padding-bottom: 85px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  text-align: center;
 }
 
 .page-main__title {
   .font-18-26-700();
+  color: @black;
+  text-align: center;
 }
 
 .page-main__text {
   line-height: 26px;
+  text-align: center;
+}
+
+.page-main__map {
+  margin-bottom: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: @tablet-width;
+  }
+
+  .page-main__bg {
+    padding-top: 77px;
+    padding-bottom: 91px;
+    background-size: cover;
+  }
+
+  .page-main__wrapper {
+    padding: 58px 125px;
+    width: @tablet-width;
+  }
+
+  .page-main__title {
+    margin-bottom: 30px;
+  }
+
+  .page-main__map {
+    margin-bottom: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: @desktop-width;
+    box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .page-main__wrapper {
+    padding: 52px 350px;
+    width: @desktop-width;
+  }
 }

@@ -1,10 +1,41 @@
-.video-presentation {
-  width: 320px;
-  padding-left: 23px;
+.video-presentation__wrapper {
+  padding: 40px 20px;
 }
 
 .video-presentation__title {
+  text-align: center;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.video-presentation__description {
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .video-presentation {
+    background-color: @white;
+  }
+
+  .video-presentation__wrapper {
+    padding: 75px 115px;
+  }
+
+  .video-presentation__title {
+    font-size: 30px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  .video-presentation__description {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-presentation__wrapper {
+    padding: 68px 275px 78px 275px;
+  }
 }

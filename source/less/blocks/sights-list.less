@@ -1,5 +1,4 @@
 .sights-list {
-  width: 100%;
   .reset-list();
   padding-top: 20px;
   .font-18-26-700();
@@ -20,3 +19,76 @@
 
 
 // TODO : Этому блоку можно добавить border-top и border-bottom чтобы получились черточки между блоками, как в макете
+
+@media (min-width: @tablet-width) {
+  .sights-list {
+    order: 4;
+    padding: 0;
+    margin-bottom: 71px;
+  }
+
+  .sights-list__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sights-list__item {
+    width: 324px;
+    margin-bottom: 32px;
+  }
+
+  .sights-list__item input {
+    margin-right: 24px;
+  }
+
+  .sights-list__item:nth-child(4n-3) {
+    padding-left: 93px;
+  }
+
+  .sights-list__item:nth-child(4n-2) {
+    padding-left: 29px;
+  }
+
+  .sights-list__item:nth-child(4n-1) {
+    padding-left: 93px;
+  }
+
+  .sights-list__item:nth-child(4n) {
+    padding-left: 29px;
+  }
+
+  .sights-list__title {
+    padding: 0 185px;
+    margin-bottom: 43px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sights-list {
+    margin-bottom: 68px;
+  }
+
+  .sights-list__item {
+    width: 240px;
+  }
+
+  .sights-list__item:nth-child(4n-3) {
+    padding-left: 0;
+  }
+
+  .sights-list__item:nth-child(4n-2) {
+    padding-left: 0;
+  }
+
+  .sights-list__item:nth-child(4n-1) {
+    padding-left: 0;
+  }
+
+  .sights-list__item:nth-child(4n) {
+    padding-left: 0;
+  }
+
+  .sights-list__title {
+    padding: 0 340px;
+  }
+}

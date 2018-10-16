@@ -1,11 +1,15 @@
 .add-list {
-  width: 320px;
   padding-top: 26px;
-  padding-left: 50px;
-  padding-bottom: 42px;
+  padding-left: 40px;
+  padding-bottom: 50px;
   color: @grey;
   background-color: @white;
   text-align: left;
+  box-sizing: border-box;
+}
+
+.add-list__wrapper {
+  width: 230px;
 }
 
 .add-list__title {
@@ -16,4 +20,67 @@
 
 .add-list__description {
   max-width: 215px;
+}
+
+@media (min-width: @tablet-width) {
+  .add-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: @tablet-width;
+  }
+
+  .add-list__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: @tablet-width;
+  }
+
+  .add-list__item {
+    padding: 164px 47px 64px 47px;
+    width: 256px;
+  }
+
+  .add-list__item:nth-child(1) {
+    order: 1;
+  }
+
+  .add-list__item:nth-child(2) {
+    order: 3;
+  }
+
+  .add-list__item:nth-child(3) {
+    order: 2;
+  }
+
+  .add-list__title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .add-list__description {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add-list {
+    width: @desktop-width;
+  }
+
+  .add-list__wrapper {
+    width: @desktop-width;
+  }
+
+  .add-list__item {
+    padding: 164px 73px 85px 73px;
+    width: 400px;
+  }
+
+  .add-list__description {
+    max-width: 285px;
+  }
 }

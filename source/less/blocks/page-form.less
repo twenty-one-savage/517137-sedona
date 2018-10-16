@@ -1,4 +1,5 @@
 .page-form {
+  margin: 0 auto;
   width: 320px;
   font-size: 18px;
   line-height: 26px;
@@ -8,21 +9,68 @@
 }
 
 .page-form__bg {
-  width: 320px;
-  height: 130px;
+  padding-top: 52px;
+  padding-bottom: 67px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 80%;
+  background-size: cover;
+  text-align: center;
 }
 
 .page-form__title {
+  text-align: center;
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
 }
 
 .page-form__text {
+  text-align: center;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+}
+
+@media (min-width: @tablet-width) {
+  .page-form {
+    width: @tablet-width;
+  }
+
+  .page-form__bg {
+    padding-top: 95px;
+    padding-bottom: 118px;
+  }
+
+  .page-form__wrapper {
+    padding: 75px 105px 50px 105px;
+  }
+
+  .page-form__title {
+    margin-bottom: 35px;
+  }
+
+  .page-form__text {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-form {
+    width: @desktop-width;
+    box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .page-form__bg {
+    padding-top: 104px;
+    padding-bottom: 122px;
+  }
+
+  .page-form__wrapper {
+    padding: 110px 179px 63px 179px;
+  }
+
+  .page-form__text {
+    margin-bottom: 63px;
+  }
 }

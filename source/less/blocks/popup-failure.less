@@ -1,21 +1,49 @@
 .popup-failure {
   width: 320px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.popup-failure__wrapper {
+  padding: 40px 35px 35px 35px;
 }
 
 .popup-failure__title {
   .font-18-26-700();
+  text-align: center;
 }
 
 .popup-failure__description {
+  max-width: 210px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: @grey;
+  text-align: center;
 }
 
 .popup-failure__button {
+  padding: 16px 78px;
+  margin-left: 15px;
   width: 180px;
-  color: @white;
-  text-transform: uppercase;
-  background-color: @blue;
+}
+
+@media (min-width: @tablet-width) {
+  .popup-failure {
+    width: 400px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .popup-failure__wrapper {
+    width: 400px;
+    padding: 60px 61px 49px 61px;
+  }
+
+  .popup-failure__description {
+    max-width: 278px;
+  }
+
+  .popup-failure__button {
+    margin: 0;
+    width: 272px;
+  }
 }

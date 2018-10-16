@@ -1,5 +1,4 @@
 .comment {
-  width: 320px;
   padding-top: 20px;
   .font-18-26-700();
   color: @black;
@@ -25,4 +24,31 @@
 
 .comment__textarea::placeholder {
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .comment {
+    order: 5;
+    padding: 0;
+  }
+
+  .comment__title {
+    margin-bottom: 57px;
+  }
+
+  .comment__textarea {
+    margin-bottom: 58px;
+    width: 648px;
+    border: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment {
+    width: 960px;
+  }
+
+  .comment__textarea {
+    width: 960px;
+  }
 }

@@ -1,4 +1,6 @@
 .page-photo {
+  margin: 0 auto;
+  width: 320px;
   font-size: 14px;
   line-height: 24px;
   color: @grey;
@@ -6,14 +8,57 @@
 }
 
 .page-photo__bg {
-  width: 320px;
-  height: 130px;
+  padding-top: 52px;
+  padding-bottom: 67px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 80%;
+  text-align: center;
 }
 
 .page-photo__title {
+  text-align: center;
   .font-18-26-700();
   color: @black;
+}
+
+.page-photo__text {
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-photo {
+    width: @tablet-width;
+  }
+
+  .page-photo__bg {
+    padding-top: 95px;
+    padding-bottom: 118px;
+    background-position: 100% 100%;
+  }
+
+  .page-photo__wrapper {
+    padding: 71px 110px;
+  }
+
+  .page-photo__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-photo {
+    width: @desktop-width;
+    box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .page-photo__bg {
+    padding-top: 104px;
+    padding-bottom: 122px;
+    background-size: cover;
+  }
+
+  .page-photo__wrapper {
+    padding: 71px 260px;
+  }
 }
