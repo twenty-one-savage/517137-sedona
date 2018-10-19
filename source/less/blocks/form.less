@@ -1,13 +1,17 @@
-.form {
-  width: 320px;
-}
-
 .form__title {
   .font-18-26-700();
 }
 
 .form__list {
   .reset-list();
+}
+
+.form__list.rating-list {
+  padding-bottom: 44px;
+}
+
+.form__list.sights-list {
+  padding-bottom: 44px;
 }
 
 .form__comment {
@@ -28,13 +32,16 @@
   .form {
     display: flex;
     flex-wrap: wrap;
+    /*fix
     width: 648px;
+    */
   }
 
   .form__wrapper {
     order: 7;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     margin-bottom: 97px;
     width: 648px;
   }

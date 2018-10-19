@@ -7,11 +7,22 @@
 .fullname__title {
   margin: 0;
   margin-bottom: 25px;
+  padding-top: 20px;
   text-align: center;
   .font-18-26-700();
 }
 
+.fullname__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .fullname__label {
+  flex-grow: 1;
+  margin-right: 15px;
+  max-width: 70px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -19,9 +30,21 @@
 }
 
 .fullname__input {
+  flex-grow: 2;
   padding: 16px 20px;
+  min-width: 0;
   background-color: #f2f2f2;
   border: 0;
+}
+
+.fullname__input:hover {
+  background-color: #e5e5e5;
+}
+
+.fullname__input:focus {
+  outline: 0;
+  background-color: @white;
+  box-shadow: 0 0 0 4px #e5e5e5;
 }
 
 .fullname__input::placeholder {
@@ -34,37 +57,26 @@
 @media (min-width: @tablet-width) {
   .fullname {
     order: 2;
+    /*fix
     width: 324px;
+    */
+
+    /*rubber*/
+    width: 50%;
     padding: 0;
     padding-left: 55px;
     box-sizing: border-box;
   }
 
   .fullname__wrapper {
+    /*fix
     width: 267px;
-  }
-
-  .fullname__item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 267px;
+    */
   }
 
   .fullname__title {
-    margin-bottom: 58px;
-    text-align: left;
-  }
-
-  .fullname__label {
-    display: block;
-    max-width: 70px;
-    margin-right: 15px;
-  }
-
-  .fullname__input {
-    width: 178px;
-    box-sizing: border-box;
+      margin-bottom: 58px;
+      text-align: left;
   }
 }
 
@@ -76,5 +88,9 @@
 
   .fullname__wrapper {
     width: 400px;
+  }
+
+  .fullname__label--desktop {
+    max-width: 36px;
   }
 }

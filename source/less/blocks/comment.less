@@ -1,4 +1,5 @@
 .comment {
+  width: auto;
   padding-top: 20px;
   .font-18-26-700();
   color: @black;
@@ -13,7 +14,10 @@
 }
 
 .comment__textarea {
+  /*fix
   width: 280px;
+  */
+  width: 100%;
   min-height: 160px;
   padding: 18px 20px;
   .font-18-26-700();
@@ -30,6 +34,9 @@
   .comment {
     order: 5;
     padding: 0;
+    width: 648px;
+    /*rubber*/
+    margin: 0 auto;
   }
 
   .comment__title {
@@ -38,7 +45,6 @@
 
   .comment__textarea {
     margin-bottom: 58px;
-    width: 648px;
     border: 0;
   }
 }

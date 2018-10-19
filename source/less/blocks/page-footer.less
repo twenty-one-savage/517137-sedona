@@ -1,6 +1,4 @@
 .page-footer {
-  width: 320px;
-  margin: 0 auto;
   background-color: @white;
 }
 
@@ -28,15 +26,20 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    /*fix
     width: @tablet-width;
+    */
   }
 
   .page-footer__wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    /*rubber*/
+    justify-content: space-around;
   }
 
+  /*fix
   .page-footer__hashtag {
     margin-right: 112px;
   }
@@ -44,12 +47,13 @@
   .page-footer .social {
     margin-right: 120px;
   }
+  */
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
+    margin: 0 auto;
     width: @desktop-width;
-    box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
   }
 
   .page-footer__hashtag {

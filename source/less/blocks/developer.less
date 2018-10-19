@@ -1,7 +1,22 @@
 .developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 140px;
 }
 
 .developer__text {
   font-weight: 400;
+}
+
+.developer__logo path {
+  fill: @black;
+}
+
+.developer__logo:hover path {
+  fill: @blue;
+}
+
+.developer__logo:active path {
+  fill: #b2b2b2;
 }

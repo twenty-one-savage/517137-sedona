@@ -20,6 +20,10 @@ body {
   text-transform: uppercase;
 }
 
+img {
+  height: auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -27,13 +31,6 @@ a {
 * {
   outline: 1px dashed red;
   box-sizing: border-box;
-}
-
-.button {
-  color: @white;
-  text-transform: uppercase;
-  background-color: @blue;
-  border: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -49,4 +46,29 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  color: @white;
+  text-transform: uppercase;
+  background-color: @blue;
+  border: 0;
+}
+
+.button:hover {
+  background-color: #669ec0;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+@media (min-width: @desktop-width) {
+  .shadow-wrapper {
+    max-width: @desktop-width;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  }
+
 }
