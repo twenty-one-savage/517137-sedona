@@ -1,13 +1,12 @@
 .fullname {
   .reset-list();
-  padding-top: 20px;
-  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .fullname__title {
   margin: 0;
   margin-bottom: 25px;
-  padding-top: 20px;
+  padding-top: 18px;
   text-align: center;
   .font-18-26-700();
 }
@@ -16,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .fullname__label {
@@ -52,8 +51,6 @@
   color: @black;
 }
 
-// TODO : Этому блоку можно добавить border-top и border-bottom чтобы получились черточки между блоками, как в макете
-
 @media (min-width: @tablet-width) {
   .fullname {
     order: 2;
@@ -66,6 +63,7 @@
     padding: 0;
     padding-left: 55px;
     box-sizing: border-box;
+    border: 0;
   }
 
   .fullname__wrapper {
@@ -75,8 +73,18 @@
   }
 
   .fullname__title {
-      margin-bottom: 58px;
-      text-align: left;
+    margin-bottom: 58px;
+    .font-21-26-700();
+    text-align: left;
+  }
+
+  .fullname__input {
+    padding: 16px 23px;
+  }
+
+  .fullname__label {
+    padding-top: 6px;
+    padding-left: 3px;
   }
 }
 
@@ -88,6 +96,15 @@
 
   .fullname__wrapper {
     width: 400px;
+  }
+
+  .fullname__title {
+    padding-top: 0;
+  }
+
+  .fullname__label {
+    padding-top: 0;
+    padding-left: 0;
   }
 
   .fullname__label--desktop {

@@ -13,20 +13,41 @@
 }
 
 .page-main__bg {
+  width: 100%;
+  position: relative;
   padding-top: 90px;
-  padding-bottom: 85px;
+  padding-bottom: 79px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   text-align: center;
 }
 
+.page-main__bg::after {
+  content: url("../img/bg-intro-triangle-mobile.svg");
+  position: absolute;
+  top: 365px;
+  left: 0;
+}
+
 .page-main__wrapper {
+  position: relative;
   /*rubber*/
-  padding: 42px 28px 28px 28px;
+  padding: 28px;
+  padding-bottom: 0;
+}
+
+.page-main__wrapper::after {
+  content: url("../img/bg-triangle.svg");
+  position: absolute;
+  top: 202px;
+  left: 0;
+  z-index: 2;
 }
 
 .page-main__title {
+  margin-bottom: 27px;
   .font-18-26-700();
   color: @black;
   text-align: center;
@@ -38,7 +59,7 @@
 }
 
 .page-main__map {
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 }
 
 @media (min-width: @tablet-width) {
@@ -50,23 +71,39 @@
 
   .page-main__bg {
     padding-top: 77px;
-    padding-bottom: 91px;
+    padding-bottom: 86px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
   }
 
+  .page-main__image {
+    /* Врменно для PP */
+    height: 350px;
+  }
+
+  .page-main__bg::after {
+    content: url("../img/bg-intro-triangle-tablet.svg");
+    top: 462px;
+  }
+
   .page-main__wrapper {
-    padding: 58px 125px;
+    padding: 36px 125px;
     /*fix
     width: @tablet-width;
     */
   }
 
+  .page-main__wrapper::after {
+    display: none;
+  }
+
   .page-main__title {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+    font-size: 21px;
   }
 
   .page-main__map {
-    margin-bottom: 36px;
+    margin-bottom: 38px;
   }
 }
 
@@ -76,8 +113,21 @@
     max-width: @desktop-width;
   }
 
+  .page-main__bg {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-main__bg::after {
+    content: url("../img/bg-intro-triangle-desktop.svg");
+    top: 462px;
+  }
+
   .page-main__wrapper {
-    padding: 52px 350px;
+    padding: 36px 350px;
     width: @desktop-width;
+  }
+
+  .page-main__map {
+    margin-bottom: 36px;
   }
 }

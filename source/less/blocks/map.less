@@ -1,4 +1,5 @@
 .map {
+  position: relative;
   /*fix
   width: 320px;
   */
@@ -10,16 +11,32 @@
   margin: 0 auto;
 }
 
+.map::after {
+  content: url("../../img/icon-map-marker.svg");
+  position: absolute;
+  top: 161px;
+  left: 50%;
+  margin-left: -14px;
+}
+
 @media (min-width: @tablet-width) {
   .map {
     /*fix
     width: @tablet-width;
     */
   }
+
+  .map::after {
+    top: 167px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .map {
     width: @desktop-width;
+  }
+
+  .map::after {
+    top: 163px;
   }
 }

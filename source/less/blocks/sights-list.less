@@ -1,21 +1,21 @@
 .sights-list {
   .reset-list();
-  padding-top: 20px;
   .font-18-26-700();
   color: @black;
   background-color: @white;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .sights-list__title {
   margin: 0;
-  margin-bottom: 25px;
-  padding-top: 20px;
+  margin-bottom: 31px;
+  padding-top: 17px;
   text-align: center;
   .font-18-26-700();
 }
 
 .sights-list__item {
-  margin-bottom: 48px;
+  margin-bottom: 54px;
 }
 
 .sights-list__item:last-child {
@@ -64,14 +64,11 @@
   left: 17px;
 }
 
-
-// TODO : Этому блоку можно добавить border-top и border-bottom чтобы получились черточки между блоками, как в макете
-
 @media (min-width: @tablet-width) {
   .sights-list {
     order: 4;
     padding: 0;
-    margin-bottom: 71px;
+    border: 0;
   }
 
   .sights-list__wrapper {
@@ -86,7 +83,7 @@
 
     /*rubber*/
     width: 50%;
-    margin-bottom: 65px;
+    margin-bottom: 62px;
   }
 
   .sights-list__item input {
@@ -110,8 +107,36 @@
   }
 
   .sights-list__title {
+    position: relative;
     padding: 0 185px;
-    margin-bottom: 43px;
+    margin-bottom: 56px;
+    .font-21-26-700();
+  }
+
+  .sights-list__title::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: block;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .sights-list__title::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 0;
+    display: block;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .sights-list__checkbox {
+    padding-left: 82px;
   }
 }
 
@@ -120,20 +145,27 @@
     margin-bottom: 68px;
   }
 
+  .sights-list__wrapper {
+    /*justify-content: space-between;*/
+  }
+
   .sights-list__item {
-    width: 240px;
+    width: 200px;
   }
 
   .sights-list__item:nth-child(4n-3) {
     padding-left: 0;
+    margin-right: 60px;
   }
 
   .sights-list__item:nth-child(4n-2) {
     padding-left: 0;
+    margin-right: 57px;
   }
 
   .sights-list__item:nth-child(4n-1) {
     padding-left: 0;
+    margin-right: 37px;
   }
 
   .sights-list__item:nth-child(4n) {
@@ -142,5 +174,10 @@
 
   .sights-list__title {
     padding: 0 340px;
+  }
+
+  .sights-list__title::before,
+  .sights-list__title::after {
+    width: 280px;
   }
 }

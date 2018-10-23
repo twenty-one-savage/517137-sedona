@@ -3,26 +3,43 @@
 }
 
 .features__list {
+  position: relative;
   .reset-list();
   background-color: #eeeeee;
 }
 
 .features__wrapper {
   /*fix*/
-  padding: 60px 37px 42px 37px;
+  padding: 28px 16px;
 }
 
 .features__title {
   margin: 0;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
   color: @black;
   text-align: center;
 }
 
 .features__number {
   text-align: center;
+  margin-bottom: 13px;
+}
+
+.features__number::before,
+.features__number::after {
+  content: "";
+  display: inline-block;
+  vertical-align: super;
+  width: 9px;
+  height: 2px;
+  background-color: #a8a8a8;
+}
+
+.features__number::before {
+  margin-right: 6px;
 }
 
 .features__description {
@@ -37,19 +54,41 @@
 
     .features__wrapper {
       /*fix*/
-      padding-left: 28px;
-      padding-right: 28px;
+      padding: 40px 28px;
     }
 
     .features__title {
       color: @white;
+      margin-bottom: 14px;
+    }
+
+    .features__number::before,
+    .features__number::after {
+      background-color: @white;
     }
   }
+
   .features__image {
     /*rubber*/
     display: block;
     margin: 0 auto;
   }
+}
+
+.features__item:first-child {
+  padding-top: 30px;
+}
+
+.features__item:nth-child(3),
+.features__item:nth-child(4),
+.features__item:nth-child(5) {
+  width: 87.5%;
+  margin: 0 auto;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.features__item:nth-child(5) {
+  border: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -72,11 +111,15 @@
     &--blue-background {
       display: flex;
       flex-wrap: wrap;
-    }
+
       .features__wrapper {
-        padding-left: 42px;
-        padding-right: 42px;
+        padding: 47px 42px;
       }
+
+      .features__title {
+        margin-bottom: 9px;
+      }
+    }
 
     &--blue-background:nth-child(2) .features__image {
       order: 1;
@@ -93,8 +136,12 @@
     width: 33%;
   }
 
+  .features__item:first-child {
+    padding-top: 0;
+  }
+
   .features__wrapper {
-    padding: 47px;
+    padding: 42px 47px;
     /*fix
     width: 256px;
     */
@@ -108,14 +155,42 @@
     */
     /*rubber*/
     width: 100%;
+
     .features__wrapper {
       width: 33%;
     }
   }
 
+  .features__item:nth-child(4) {
+    .features__description {
+      max-width: 145px;
+      margin: 0 auto;
+    }
+  }
+
+  .features__item:nth-child(3),
+  .features__item:nth-child(4),
+  .features__item:nth-child(5) {
+    width: 33%;
+    border-bottom: 0;
+  }
+
   .features__title {
-    margin: 0 auto;
-    max-width: 160px;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 11px;
+  }
+
+  .features__item:nth-child(2) {
+    .features__title {
+      max-width: 151px;
+      margin: 0 auto;
+      margin-bottom: 9px;
+    }
+  }
+
+  .features__number {
+    margin-bottom: 20px;
   }
 
   .features__description {
@@ -142,21 +217,71 @@
 
   .features__item {
     width: 400px;
+
+    &--blue-background {
+      .features__wrapper {
+        padding: 51px 55px;
+      }
+
+      .features__title {
+        margin: 0 auto;
+        margin-bottom: 12px;
+        max-width: 150px;
+      }
+    }
   }
 
-  .features__wrapper {
-    padding: 53px 67px;
-    width: 400px;
+  .features__item:nth-child(1) {
+    width: @desktop-width;
+
+    .features__wrapper {
+      width: 400px;
+    }
   }
 
-  .features__item:nth-child(1),
   .features__item:nth-child(2) {
     width: @desktop-width;
+
+    .features__wrapper {
+      padding: 54px 85px;
+      width: 400px;
+    }
+
+    .features__title {
+      margin-bottom: 10px;
+    }
   }
 
   .features__image {
-    /*fix
     width: 800px;
-    */
+  }
+
+  .features__wrapper {
+    padding: 41px 50px;
+    padding-bottom: 62px;
+    width: 400px;
+  }
+
+  .features__item:nth-child(3),
+  .features__item:nth-child(4),
+  .features__item:nth-child(5) {
+    width: 400px;
+
+    .features__title {
+      margin: 0 auto;
+      margin-bottom: 11px;
+      max-width: 150px;
+    }
+  }
+
+  .features__item:nth-child(4) {
+    .features__description {
+      margin: 0;
+      max-width: 300px;
+    }
+  }
+
+  .features__title {
+    font-weight: 700;
   }
 }

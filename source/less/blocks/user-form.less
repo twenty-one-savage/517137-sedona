@@ -6,11 +6,12 @@
 
   /*rubber*/
   width: auto;
-  margin-bottom: 75px;
+  margin-bottom: 72px;
 }
 
 @media (min-width: @tablet-width) {
   .user-form {
+    position: relative;
     /*fix
     width: 648px;
     */
@@ -18,11 +19,27 @@
     margin: 0 auto;
     width: 84.4%;
   }
+
+  .user-form::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    display: block;
+    margin-left: -1px;
+    width: 1px;
+    height: 292px;
+    background-color: #dbdbdb;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .user-form {
     width: 960px;
     margin-bottom: 0;
+  }
+
+  .user-form::before {
+    top: 0;
   }
 }

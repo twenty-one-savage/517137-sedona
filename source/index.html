@@ -30,13 +30,15 @@
       <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
     </a>
     <div class="page-header__burger burger centre">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-      <g>
-        <rect width="22.928" height="3.964"/>
-        <rect y="9.009" width="22.928" height="3.964"/>
-        <rect y="18.018" width="22.928" height="3.964"/>
-      </g>
-    </svg>
+      <button class="burger__button">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+          <g>
+            <rect width="22.928" height="3.964"/>
+            <rect y="9.009" width="22.928" height="3.964"/>
+            <rect y="18.018" width="22.928" height="3.964"/>
+          </g>
+        </svg>
+      </button>
     </div>
   </header>
   <main class="page-main">
@@ -44,7 +46,7 @@
       <img class="page-main__image" src="img/text-sedona-index.svg" width="282" height="114" alt="Sedona">
     </div>
     <div class="page-main__wrapper centre">
-      <h1 class="page-main__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <h1 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p class="page-main__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </div>
     <section class="features">
@@ -57,8 +59,7 @@
               <!--Здесь будет черточка, которая будет реализована через псевдоэлемент --> </div>
             <p class="features__description">Седона не аттракцион для туристов. Там течет своя жизнь</p>
           </div>
-          <img class="features__image" src="img/main-city-mobile@1x.jpg" width="320" height="260"
-               alt="Фото города Седона">
+          <img class="features__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города Седона">
           <!-- Не совсем уверен в наименовании класса по БЭМ -->
           <ul class="features__list add-list">
             <div class="add-list__wrapper centre">
@@ -68,7 +69,7 @@
               </li>
               <li class="add-list__item">
                 <h4 class="add-list__title">Сувениры</h4>
-                <p class="add-list__description">Не только китайского, но и местного производства!</p>
+                <p class="add-list__description">Не только китайского,<br class="add-list__wrapping"> но и местного производства!</p>
               </li>
               <li class="add-list__item">
                 <h4 class="add-list__title">Еда</h4>
@@ -107,15 +108,15 @@
             <h3 class="features__title">Мало туристов</h3>
             <div class="features__number"><!--Здесь будет черточка, которая будет реализована через псевдоэлемент -->№5
               <!--Здесь будет черточка, которая будет реализована через псевдоэлемент --></div>
-            <p class="features__description">Большинство едет в Гранд каьон и толпится там</p>
+            <p class="features__description">Большинство едет в Гранд каньон и толпится там</p>
           </div>
         </li>
       </ol>
     </section>
     <section class="hotels">
       <div class="hotels__wrapper centre">
-        <h2 class="hotels__title">Заинтерсовались?</h2>
-        <p class="hotels__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+        <h2 class="hotels__title">Заинтересовались?</h2>
+        <p class="hotels__description">Укажите предполагаемые даты поездки,<br class="hotels__wrapping"> и мы покажем вам лучшие предложения гостиниц
           в
           Седоне</p>
         <a class="hotels__button button" href="#">Найти гостиницу</a>
@@ -160,7 +161,7 @@
         </li>
       </ul>
       <div class="page-footer__developer developer">
-        <b class="developer__text">Разработано</b>
+        <span class="developer__text">Разработано</span>
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
           <svg class="developer__logo " xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>

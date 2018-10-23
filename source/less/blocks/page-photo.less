@@ -12,26 +12,35 @@
 }
 
 .page-photo__bg {
-  padding-top: 52px;
-  padding-bottom: 67px;
+  padding-top: 54px;
+  padding-bottom: 62px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 50% 100%;
   background-repeat: no-repeat;
-  background-position: 50% 80%;
-  background-size: cover;
   text-align: center;
 }
 
+.page-photo__bg::after {
+  content: url("../img/bg-intro-triangle-mobile.svg");
+  position: absolute;
+  top: 413px;
+  left: 0;
+}
+
 .page-photo__wrapper {
-  padding: 42px 25px 28px 25px;
+  padding: 25px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .page-photo__title {
+  margin-bottom: 25px;
   text-align: center;
   .font-18-26-700();
   color: @black;
 }
 
 .page-photo__text {
+  margin: 0;
   text-align: center;
 }
 
@@ -44,16 +53,31 @@
 
   .page-photo__bg {
     padding-top: 95px;
-    padding-bottom: 118px;
-    background-position: 100% 100%;
+    padding-bottom: 112px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 100%;
+  }
+
+  .page-photo__bg::after {
+    content: url("../img/bg-intro-triangle-tablet.svg");
+    top: 290px;
+  }
+
+  .page-photo__image {
+    // TODO Временно
+    /*Временно*/
+    height: 76px;
   }
 
   .page-photo__wrapper {
-    padding: 71px 162px;
+    padding: 52px 162px;
   }
 
   .page-photo__title {
     margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
   }
 }
 
@@ -63,12 +87,19 @@
   }
 
   .page-photo__bg {
-    padding-top: 104px;
-    padding-bottom: 122px;
+    padding-top: 105px;
+    padding-bottom: 114px;
     background-size: cover;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-photo__bg::after {
+    content: url("../img/bg-intro-triangle-desktop.svg");
+    top: 301px;
   }
 
   .page-photo__wrapper {
-    padding: 71px 377px;
+    padding: 88px 258px;
+    padding-bottom: 55px;
   }
 }
