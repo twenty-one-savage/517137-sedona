@@ -1,8 +1,11 @@
 .video-presentation__wrapper {
-  padding: 40px 20px;
+  padding: 22px;
+  padding-top: 27px;
 }
 
 .video-presentation__title {
+  margin: 0;
+  margin-bottom: 26px;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
@@ -13,13 +16,23 @@
   text-align: center;
 }
 
+.video-presentation__video {
+  display: block;
+  margin: 0 auto;
+}
+
+.video-presentation__player {
+  margin-top: -49px;
+}
+
 @media (min-width: @tablet-width) {
   .video-presentation {
     background-color: @white;
   }
 
   .video-presentation__wrapper {
-    padding: 75px 115px;
+    padding: 65px 115px;
+    padding-bottom: 73px;
   }
 
   .video-presentation__title {
@@ -32,10 +45,19 @@
   .video-presentation__description {
     margin: 0;
   }
+
+  .video-presentation__video {
+    // TODO Временная высота
+    height: 500px;
+  }
+
+  .video-presentation__player {
+    margin-top: -93px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .video-presentation__wrapper {
-    padding: 68px 275px 78px 275px;
+    padding: 70px 265px;
   }
 }

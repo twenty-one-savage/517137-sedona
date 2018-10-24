@@ -1,5 +1,4 @@
 .main-nav {
-  position: relative;
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
@@ -8,8 +7,8 @@
 
 .main-nav__close {
   position: absolute;
-  top: 12px;
-  left: 278px;
+  top: 17px;
+  right: 20px;
   width: 23px;
   height: 23px;
   cursor: pointer;
@@ -48,7 +47,9 @@
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
+    /*fix
     margin-left: 49px;
+    */
     font-size: 14px;
     line-height: 26px;
     color: @black;
@@ -61,11 +62,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav {
-    width: @desktop-width;
-  }
-
+  /*fix
   .main-nav__list {
     margin-left: 91px;
   }
+  */
 }

@@ -1,14 +1,18 @@
 .page-header {
   position: relative;
+  /*fix
   width: 320px;
   margin: 0 auto;
+  */
+  /*"Rubber"*/
+  margin: auto;
   background-color: @white;
 }
 
 .page-header__logo {
   position: absolute;
-  top: 257px;
-  left: 111px;
+  left: 50%;
+  margin-left: -50px;
   width: 102px;
   height: 83px;
   z-index: 2;
@@ -21,18 +25,25 @@
 
 .page-header__burger {
   text-align: right;
-  padding: 17px 0;
+  padding: 14px 19px 13px 0;
+}
+
+.burger__button {
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
+  /*fix
   .page-header {
     width: @tablet-width;
   }
-
+  */
   .page-header__logo {
     position: absolute;
     top: 0;
-    left: 333px;
+    left: 50%;
+    margin-left: -51px;
   }
 
   .page-header__burger {
@@ -42,14 +53,14 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    width: @desktop-width;
-    box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+    max-width: @desktop-width;
   }
 
   .page-header__logo {
     position: absolute;
     top: 0;
-    left: 505px;
+    left: 50%;
+    margin-left: -89px;
     width: 188px;
     height: 96px;
   }

@@ -1,5 +1,6 @@
 .comment {
-  padding-top: 20px;
+  width: auto;
+  padding-top: 16px;
   .font-18-26-700();
   color: @black;
   background-color: @white;
@@ -7,18 +8,22 @@
 
 .comment__title {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 13px;
   text-align: center;
   .font-18-26-700();
 }
 
 .comment__textarea {
+  /*fix
   width: 280px;
+  */
+  width: 100%;
   min-height: 160px;
   padding: 18px 20px;
   .font-18-26-700();
   text-transform: none;
   background-color: #f2f2f2;
+  border: 0;
   box-sizing: border-box;
 }
 
@@ -30,22 +35,53 @@
   .comment {
     order: 5;
     padding: 0;
+    width: 648px;
+    /*rubber*/
+    margin: 0 auto;
   }
 
   .comment__title {
+    position: relative;
     margin-bottom: 57px;
+    .font-21-26-700();
+  }
+
+  .comment__title::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    display: block;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .comment__title::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 0;
+    display: block;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
   }
 
   .comment__textarea {
-    margin-bottom: 58px;
-    width: 648px;
-    border: 0;
+    margin-bottom: 51px;
+    padding: 16px 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .comment {
     width: 960px;
+  }
+
+  .comment__title::before,
+  .comment__title::after {
+    width: 280px;
   }
 
   .comment__textarea {
