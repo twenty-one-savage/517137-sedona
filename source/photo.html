@@ -26,7 +26,11 @@
         </li>
       </ul>
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логоти сайта Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+        </picture>
       </a>
     </nav>
     <div class="page-header__burger burger centre">
@@ -53,56 +57,64 @@
         <li class="photo-gallery__item">
           <div class="photo-gallery__wrap centre">
             <a class="photo-gallery__link" href="#">
-              <img class="photo-gallery__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="photo-gallery__image" src="img/photo-sunset-mobile@1x.jpg 1x" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фотография пользователя">
+              </picture>
             </a>
             <div class="photo-gallery__wrapper">
               <p class="photo-gallery__description">Неродные просторы</p>
-              <div class="photo-gallery__flex-wrapper">
-                <p class="photo-gallery__author">Автор фото: Борис</p>
-                <div class="photo-gallery__like like">1350</div>
-              </div>
+              <p class="photo-gallery__author">Автор фото: Борис</p>
+              <div class="photo-gallery__like like">1350</div>
             </div>
           </div>
         </li>
         <li class="photo-gallery__item">
           <div class="photo-gallery__wrap centre">
             <a class="photo-gallery__link" href="#">
-              <img class="photo-gallery__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img class="photo-gallery__image" src="img/photo-cactus-mobile@1x.jpg 1x" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фотография пользователя">
+              </picture>
             </a>
             <div class="photo-gallery__wrapper">
               <p class="photo-gallery__description">Местная растительность</p>
-              <div class="photo-gallery__flex-wrapper">
-                <p class="photo-gallery__author">Автор фото: Сергей</p>
-                <div class="photo-gallery__like like">143</div>
-              </div>
+              <p class="photo-gallery__author">Автор фото: Сергей</p>
+              <div class="photo-gallery__like like">143</div>
             </div>
           </div>
         </li>
         <li class="photo-gallery__item">
           <div class="photo-gallery__wrap centre">
             <a class="photo-gallery__link" href="#">
-              <img class="photo-gallery__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img class="photo-gallery__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фотография пользователя">
+              </picture>
             </a>
             <div class="photo-gallery__wrapper">
               <p class="photo-gallery__description">Дорога на север</p>
-              <div class="photo-gallery__flex-wrapper">
-                <p class="photo-gallery__author">Автор фото: Петр</p>
-                <div class="photo-gallery__like like">96</div>
-              </div>
+              <p class="photo-gallery__author">Автор фото: Петр</p>
+              <div class="photo-gallery__like like">96</div>
             </div>
           </div>
         </li>
         <li class="photo-gallery__item">
           <div class="photo-gallery__wrap centre">
             <a class="photo-gallery__link" href="#">
-              <img class="photo-gallery__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 2x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="photo-gallery__image" src="img/photo-bridge-mobile@1x.jpg 1x" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фотография пользователя">
+              </picture>
             </a>
             <div class="photo-gallery__wrapper">
               <p class="photo-gallery__description">Мост Дьявола</p>
-              <div class="photo-gallery__flex-wrapper">
-                <p class="photo-gallery__author">Автор фото: Антон</p>
-                <div class="photo-gallery__like like">254</div>
-              </div>
+              <p class="photo-gallery__author">Автор фото: Антон</p>
+              <div class="photo-gallery__like like">254</div>
             </div>
           </div>
         </li>
@@ -115,7 +127,11 @@
             подорожали в очередной раз!</p>
         </div>
         <!--Здесь должно быть видео, как его реализовать, пока оставил img -->
-        <img class="video-presentation__video" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видео">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="video-presentation__video" src="img/video-mobile@1x.jpg 1x" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
+        </picture>
         <div class="video-presentation__player player centre">
           <div class="player__volume">
             <div class="player__scale">

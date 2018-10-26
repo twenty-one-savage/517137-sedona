@@ -1,22 +1,32 @@
 .map {
   position: relative;
+  background-size: cover;
   /*fix
   width: 320px;
   */
 }
 
 .map__image {
+  height: 350px;
   /*rubber*/
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 
 .map::after {
-  content: url("../../img/icon-map-marker.svg");
+  content: "";
   position: absolute;
-  top: 161px;
+  top: 50%;
   left: 50%;
+  margin-top: -15px;
   margin-left: -14px;
+  display: block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: @tablet-width) {
@@ -25,18 +35,10 @@
     width: @tablet-width;
     */
   }
-
-  .map::after {
-    top: 167px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .map {
     width: @desktop-width;
-  }
-
-  .map::after {
-    top: 163px;
   }
 }

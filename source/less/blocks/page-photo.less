@@ -12,23 +12,35 @@
 }
 
 .page-photo__bg {
+  position: relative;
   padding-top: 54px;
   padding-bottom: 62px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 100%;
   background-repeat: no-repeat;
   text-align: center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 768px auto;
+  }
 }
 
 .page-photo__bg::after {
-  content: url("../img/bg-intro-triangle-mobile.svg");
+  content: "";
   position: absolute;
-  top: 413px;
+  bottom: 0;
   left: 0;
+  display: block;
+  width: 100%;
+  height: 26px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-photo__wrapper {
-  padding: 25px;
+  padding: 25px 5px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -56,11 +68,18 @@
     padding-bottom: 112px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 100%;
+    background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .page-photo__bg::after {
-    content: url("../img/bg-intro-triangle-tablet.svg");
-    top: 290px;
+    content: "";
+    height: 57px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
   }
 
   .page-photo__image {
@@ -71,6 +90,7 @@
 
   .page-photo__wrapper {
     padding: 52px 162px;
+    border: 0;
   }
 
   .page-photo__title {
@@ -91,11 +111,16 @@
     padding-bottom: 114px;
     background-size: cover;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .page-photo__bg::after {
-    content: url("../img/bg-intro-triangle-desktop.svg");
-    top: 301px;
+    content: "";
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 
   .page-photo__wrapper {
