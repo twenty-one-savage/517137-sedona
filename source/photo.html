@@ -8,8 +8,8 @@
 </head>
 <body>
 <div class="shadow-wrapper">
-  <header class="page-header">
-    <nav class="main-nav">
+  <header class="page-header page-header--nojs">
+    <nav class="main-nav main-nav--opened">
       <button class="main-nav__close" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -34,13 +34,15 @@
       </a>
     </nav>
     <div class="page-header__burger burger centre">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-      <g>
-        <rect width="22.928" height="3.964"/>
-        <rect y="9.009" width="22.928" height="3.964"/>
-        <rect y="18.018" width="22.928" height="3.964"/>
-      </g>
-    </svg>
+      <button class="burger__button">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+          <g>
+            <rect width="22.928" height="3.964"/>
+            <rect y="9.009" width="22.928" height="3.964"/>
+            <rect y="18.018" width="22.928" height="3.964"/>
+          </g>
+        </svg>
+      </button>
     </div>
   </header>
   <main class="page-photo">
@@ -60,7 +62,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                <img class="photo-gallery__image" src="img/photo-sunset-mobile@1x.jpg 1x" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                <img class="photo-gallery__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
             </a>
             <div class="photo-gallery__wrapper">
@@ -76,7 +78,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-                <img class="photo-gallery__image" src="img/photo-cactus-mobile@1x.jpg 1x" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                <img class="photo-gallery__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
             </a>
             <div class="photo-gallery__wrapper">
@@ -108,7 +110,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 2x, img/photo-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="photo-gallery__image" src="img/photo-bridge-mobile@1x.jpg 1x" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                <img class="photo-gallery__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
             </a>
             <div class="photo-gallery__wrapper">
@@ -126,11 +128,11 @@
           <p class="video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не
             подорожали в очередной раз!</p>
         </div>
-        <!--Здесь должно быть видео, как его реализовать, пока оставил img -->
+        <!--Здесь должно быть видео, пока оставил img -->
         <picture>
           <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-          <img class="video-presentation__video" src="img/video-mobile@1x.jpg 1x" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
+          <img class="video-presentation__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
         </picture>
         <div class="video-presentation__player player centre">
           <div class="player__volume">
@@ -204,5 +206,30 @@
     </div>
   </footer>
 </div>
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var pageHeader = document.querySelector('.page-header');
+  var iconClose = document.querySelector('.main-nav__close');
+  var iconOpen = document.querySelector('.burger__button');
+
+  pageHeader.classList.remove('page-header--nojs');
+
+  iconOpen.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+      iconOpen.classList.add('burger__button--off');
+    }
+  });
+
+  iconClose.addEventListener('click', function () {
+    if (navMain.classList.contains('main-nav--opened')) {
+      navMain.classList.remove('main-nav--opened');
+      navMain.classList.add('main-nav--closed');
+      iconClose.classList.add('main-nav__close--off');
+      iconOpen.classList.remove('burger__button--off');
+    }
+  });
+</script>
 </body>
 </html>
