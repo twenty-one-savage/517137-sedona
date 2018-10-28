@@ -9,8 +9,8 @@
   position: absolute;
   top: 17px;
   right: 20px;
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -19,10 +19,10 @@
   &::after {
     content: "";
     position: absolute;
-    top: 13px;
+    top: 9px;
     left: 0;
-    width: 23px;
-    height: 3px;
+    width: 28px;
+    height: 5px;
     background-color: @white;
   }
 
@@ -37,6 +37,24 @@
 
 .main-nav__list {
   .reset-list();
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .main-nav--closed .main-nav__close {
+    display: none;
+  }
+
+  .main-nav--opened .site-list__item {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {

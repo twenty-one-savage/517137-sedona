@@ -25,12 +25,24 @@
 
 .page-header__burger {
   text-align: right;
-  padding: 14px 19px 13px 0;
+  padding: 14px 0;
+  height: 55px;
 }
 
 .burger__button {
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: @mobile-width-only) {
+  .page-header--nojs .main-nav__close,
+  .page-header--nojs .page-header__burger {
+    display: none;
+  }
+
+  .page-header .burger__button--off {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
