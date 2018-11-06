@@ -1,10 +1,14 @@
+.photo-gallery {
+  border-top: 1px solid #e5e5e5;
+}
+
 .photo-gallery__list {
   .reset-list();
 }
 
 .photo-gallery__item {
   padding-top: 22px;
-  border-bottom: 1px solid  #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .photo-gallery__image {
@@ -38,6 +42,7 @@
   .photo-gallery {
     width: 84%;
     margin: 0 auto;
+    border: none;
   }
 
   .photo-gallery__list {
@@ -51,9 +56,9 @@
     width: 324px;
     */
     padding: 0;
-    margin-bottom: 16px;
     /*rubber*/
     width: 50%;
+    border: none;
   }
 
   .photo-gallery__item:nth-child(1) {
@@ -75,7 +80,6 @@
   }
 
   .photo-gallery__image {
-    margin-bottom: 15px;
     // TODO Временная высота
     height: 267px;
   }
@@ -87,17 +91,17 @@
     }
   }
 
-  .photo-gallery__item:nth-child(2),
-  .photo-gallery__item:nth-child(3),
-  .photo-gallery__item:nth-child(4),
-  .photo-gallery__item:nth-child(5) {
-    .photo-gallery__like {
-      margin-right: 10px;
-    }
+  .photo-gallery__wrap {
+    background-color: #f2f2f2;
+  }
+
+  .photo-gallery__wrap:nth-child(3) {
+    background-color: #eaeaea;
   }
 
   .photo-gallery__wrapper {
     margin: 0;
+    padding: 16px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -120,11 +124,6 @@
     margin: 0;
     padding-left: 20px;
     max-width: 200px;
-  }
-
-  .photo-gallery__like {
-    padding-right: 18px;
-    margin-top: -10px;
   }
 
   .photo-gallery__video-presentation {
