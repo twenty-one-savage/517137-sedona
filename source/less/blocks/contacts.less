@@ -67,9 +67,8 @@
 }
 
 .contacts__input:focus {
-  outline: 0;
   background-color: @white;
-  box-shadow: 0 0 0 4px #e5e5e5;
+  outline: 4px solid #e5e5e5;
 }
 
 .contacts__input::placeholder {
@@ -77,6 +76,10 @@
   line-height: 26px;
   font-weight: bold;
   color: @black;
+}
+
+.error {
+  outline: 1px solid red;
 }
 
 @media (min-width: @tablet-width) {
