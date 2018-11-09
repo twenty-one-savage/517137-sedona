@@ -18,7 +18,7 @@ try {
 }
 
 form.addEventListener("submit", function (evt) {
-  if (!phoneNumber.value || !email.value || !name.value || !surname.value) {
+  if (!phoneNumber.value || !email.value || !firstName.value || !surname.value) {
     evt.preventDefault();
     popupFailure.classList.remove("popup-show--error");
     popupFailure.offsetWidth = popupFailure.offsetWidth;
@@ -44,7 +44,7 @@ closeFailure.addEventListener("click", function (evt) {
 
 closeSuccess.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popupSuccess.classList.remove("popup-show--error");
+  popupSuccess.classList.remove("popup-show");
 });
 
 window.addEventListener("keydown", function (evt) {
