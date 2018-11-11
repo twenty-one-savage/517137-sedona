@@ -1,28 +1,33 @@
-.sights-list {
-  .reset-list();
+.sights {
   .font-18-26-700();
   color: @black;
   background-color: @white;
   border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 40px;
 }
 
-.sights-list__title {
+.sights__list {
+  .reset-list();
+  margin: 0 auto;
+}
+
+.sights__title {
   margin: 0;
   margin-bottom: 31px;
-  padding-top: 17px;
+  padding-top: 19px;
   text-align: center;
   .font-18-26-700();
 }
 
-.sights-list__item {
+.sights__item {
   margin-bottom: 54px;
 }
 
-.sights-list__item:last-child {
+.sights__item:last-child {
   margin-bottom: 0;
 }
 
-.sights-list__checkbox {
+.sights__checkbox {
   position: relative;
   padding-top: 15px;
   padding-left: 78px;
@@ -30,7 +35,7 @@
   text-transform: none;
 }
 
-.sights-list__input + .checkbox__indicator {
+.sights__input + .checkbox__indicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -39,43 +44,52 @@
   background-color: #f2f2f2;
 }
 
-.sights-list__input:hover + .checkbox__indicator {
+.sights__input:hover + .checkbox__indicator {
   background-color: #e5e5e5;
 }
 
-.sights-list__input:active + .checkbox__indicator {
+.sights__input:active + .checkbox__indicator {
   background-color: #d5d5d5;
 }
 
-.sights-list__input:active + .checkbox__indicator::before {
+.sights__input:active + .checkbox__indicator::before {
   opacity: 0.3;
 }
 
-.sights-list__input:focus + .checkbox__indicator {
+.sights__input:focus + .checkbox__indicator {
   border-color: #663d15;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.sights-list__input:checked + .checkbox__indicator::before {
-  content: url("../img/icon-tick.svg");
+.sights__input:checked + .checkbox__indicator::before {
+  content: "";
   position: absolute;
-  top: 16px;
-  left: 17px;
+  top: 19px;
+  left: 18px;
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 @media (min-width: @tablet-width) {
-  .sights-list {
+  .sights {
+    width: 100%;
+    padding-bottom: 22px;
+    border: 0;
     order: 4;
+  }
+
+  .sights__list {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
     border: 0;
   }
 
-  .sights-list__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .sights-list__item {
+  .sights__item {
     /*fix
     width: 324px;
     */
@@ -85,34 +99,34 @@
     margin-bottom: 62px;
   }
 
-  .sights-list__item input {
+  .sights__item input {
     margin-right: 24px;
   }
 
-  .sights-list__item:nth-child(4n-3) {
+  .sights__item:nth-child(4n-3) {
     padding-left: 93px;
   }
 
-  .sights-list__item:nth-child(4n-2) {
+  .sights__item:nth-child(4n-2) {
     padding-left: 29px;
   }
 
-  .sights-list__item:nth-child(4n-1) {
+  .sights__item:nth-child(4n-1) {
     padding-left: 93px;
   }
 
-  .sights-list__item:nth-child(4n) {
+  .sights__item:nth-child(4n) {
     padding-left: 29px;
   }
 
-  .sights-list__title {
+  .sights__title {
     position: relative;
     padding: 0 185px;
     margin-bottom: 56px;
     .font-21-26-700();
   }
 
-  .sights-list__title::before {
+  .sights__title::before {
     content: "";
     position: absolute;
     top: 25px;
@@ -123,7 +137,7 @@
     background-color: #dbdbdb;
   }
 
-  .sights-list__title::after {
+  .sights__title::after {
     content: "";
     position: absolute;
     top: 25px;
@@ -134,49 +148,51 @@
     background-color: #dbdbdb;
   }
 
-  .sights-list__checkbox {
+  .sights__checkbox {
     padding-left: 82px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .sights-list {
-    margin-bottom: 68px;
+  .sights {
+    padding-bottom: 19px;
+    width: 960px;
   }
 
-  .sights-list__wrapper {
-    /*justify-content: space-between;*/
-  }
-
-  .sights-list__item {
+  .sights__item {
     width: 200px;
   }
 
-  .sights-list__item:nth-child(4n-3) {
+  .sights__item:nth-child(4n-3) {
     padding-left: 0;
     margin-right: 60px;
   }
 
-  .sights-list__item:nth-child(4n-2) {
+  .sights__item:nth-child(4n-2) {
     padding-left: 0;
     margin-right: 57px;
   }
 
-  .sights-list__item:nth-child(4n-1) {
+  .sights__item:nth-child(4n-1) {
     padding-left: 0;
     margin-right: 37px;
   }
 
-  .sights-list__item:nth-child(4n) {
+  .sights__item:nth-child(4n) {
     padding-left: 0;
   }
 
-  .sights-list__title {
+  .sights__title {
     padding: 0 340px;
   }
 
-  .sights-list__title::before,
-  .sights-list__title::after {
+  .sights__title::before,
+  .sights__title::after {
+    content: "";
     width: 280px;
+  }
+
+  .sights__checkbox {
+    padding-left: 78px;
   }
 }

@@ -27,11 +27,12 @@
 
 @media (min-width: @tablet-width) {
   .video-presentation {
+    width: 648px;
     background-color: @white;
   }
 
   .video-presentation__wrapper {
-    padding: 65px 115px;
+    padding: 67px 115px;
     padding-bottom: 73px;
   }
 
@@ -39,7 +40,7 @@
     font-size: 30px;
     line-height: 26px;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
   }
 
   .video-presentation__description {
@@ -57,7 +58,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .video-presentation {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .video-presentation__wrapper {
-    padding: 70px 265px;
+    padding: 72px 265px;
   }
 }

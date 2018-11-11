@@ -63,9 +63,9 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("htmlminify", function () {
-  return gulp.src("source/*.html")
-    .pipe(htmlmin({collapseWhitespace: true}))
+gulp.task("minify", function () {
+  return gulp.src("build/*.html")
+    .pipe(htmlmin({collapseWhitespace : true }))
     .pipe(gulp.dest("build"));
 });
 
@@ -108,5 +108,5 @@ gulp.task ("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "htmlminify", "jsminify"));
+gulp.task("build", gulp.series("clean", "copy", "css","jsminify", "sprite", "html","minify"));
 gulp.task("start", gulp.series("build", "server"));

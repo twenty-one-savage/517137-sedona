@@ -32,8 +32,14 @@ a {
   text-decoration: none;
 }
 
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .visually-hidden:not(:focus):not(:active),

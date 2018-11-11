@@ -1,20 +1,36 @@
 .map {
-  position: relative;
   background-size: cover;
   /*fix
   width: 320px;
   */
 }
 
+.map__iframe {
+  display: none;
+  border: 0;
+}
+
+.map__iframe--js {
+  display: block;
+}
+
+.map__picture {
+  position: relative;
+  display: block;
+}
+
+.map__picture--nojs {
+  display: none;
+}
+
 .map__image {
-  height: 350px;
-  /*rubber*/
   display: block;
   margin: 0 auto;
   width: 100%;
+  height: 350px;
 }
 
-.map::after {
+.map__picture::after {
   content: "";
   position: absolute;
   top: 50%;
