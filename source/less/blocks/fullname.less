@@ -1,5 +1,6 @@
-.fullname__wrapper {
-  padding-bottom: 4px;
+.fullname {
+  padding-top: 18px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -11,9 +12,7 @@
 }
 
 .fullname__title {
-  margin: 0;
-  margin-bottom: 22px;
-  padding-top: 18px;
+  margin: 0 0 21px;
   text-align: center;
   .font-18-26-700();
 }
@@ -23,6 +22,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.fullname__item:last-child {
+  margin-bottom: 0;
 }
 
 .fullname__label {
@@ -48,7 +51,7 @@
 }
 
 .fullname__input--name {
-  padding: 16px 18px;
+  padding: 16px;
 }
 
 .fullname__input:hover {
@@ -72,11 +75,10 @@
 
 @media (min-width: @tablet-width) {
   .fullname {
-    padding: 0;
     display: flex;
     flex-direction: column;
-    width: 50%;
     padding-left: 55px;
+    width: 50%;
     border: 0;
     order: 2;
   }
@@ -87,7 +89,7 @@
   }
 
   .fullname__title {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
     .font-21-26-700();
     text-align: left;
   }
@@ -98,23 +100,20 @@
   }
 
   .fullname__input {
+    width: 184px;
     padding: 16px 27px;
+  }
+
+  .fullname__input--name {
+    padding: 16px 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .fullname {
-    width: 480px;
-    padding-left: 80px;
-  }
-
-  .fullname__wrapper {
-    padding: 0;
-    margin: 0;
-  }
-
-  .fullname__title {
     padding-top: 0;
+    padding-left: 80px;
+    width: 480px;
   }
 
   .fullname__list {
@@ -124,6 +123,14 @@
   .fullname__label {
     padding-top: 0;
     padding-left: 0;
+  }
+
+  .fullname__input {
+    padding: 16px 23px;
+  }
+
+  .fullname__input--name {
+    padding: 16px 20px;
   }
 
   .fullname__label--desktop {

@@ -5,22 +5,24 @@
   <style>
     HTML {
       background-repeat: no-repeat;
-      background-position:  50% 0;
+      background-position: 50% 0;
       /* По умолчанию мобильный макет */
-      background-image: url( "img/sedona-form-mobile.png" );
+      background-image: url("img/sedona-form-mobile.png");
     }
+
     /* Планшет */
     @media ( min-width: 768px ) {
       HTML {
         /* Планшетный макет */
-        background-image: url( "img/sedona-form-tablet.png" );
+        background-image: url("img/sedona-form-tablet.png");
       }
     }
+
     /* Десктоп */
     @media ( min-width: 1200px ) {
       HTML {
         /* Десктопный макет */
-        background-image: url( "img/sedona-form-desktop.png" );
+        background-image: url("img/sedona-form-desktop.png");
       }
     }
 
@@ -90,7 +92,6 @@
       <form class="user-form__form form" action="https://echo.htmlacademy.ru" method="get">
         <section class="form__fullname fullname">
           <h3 class="fullname__title">Представьтесь:</h3>
-          <div class="fullname__wrapper">
             <ul class="fullname__list centre">
               <li class="fullname__item">
                 <label class="fullname__label fullname__label--desktop" for="name-field">Имя<sup>*</sup>:</label>
@@ -108,99 +109,92 @@
                        placeholder="Александрович" autocomplete="on">
               </li>
             </ul>
-          </div>
         </section>
         <section class="form__contacts contacts">
           <h3 class="contacts__title">Контактная информация:</h3>
-          <div class="contacts__wrapper">
-            <ul class="contacts__list centre">
-              <li class="contacts__item">
-                <label class="contacts__label contacts__label--phone" for="phone-field"><span class="contacts__word">Контактный</span>
-                  телефон<sup>*</sup>:</label>
-                <input class="contacts__input contacts__input--phone" name="phone" id="phone-field" type="number"
-                       placeholder="Введите телефон" autocomplete="on">
-              </li>
-              <li class="contacts__item">
-                <label class="contacts__label contacts__label--mail" for="email-field">Электронная
-                  почта<sup>*</sup>:</label>
-                <input class="contacts__input contacts__input--mail" name="email" id="email-field" type="email"
-                       placeholder="Введите e-mail" autocomplete="on">
-              </li>
-            </ul>
-          </div>
+          <ul class="contacts__list centre">
+            <li class="contacts__item">
+              <label class="contacts__label contacts__label--phone" for="phone-field"><span class="contacts__word">Контактный</span>
+                телефон<sup>*</sup>:</label>
+              <input class="contacts__input contacts__input--phone" name="phone" id="phone-field" type="number"
+                     placeholder="Введите телефон" autocomplete="on">
+            </li>
+            <li class="contacts__item">
+              <label class="contacts__label contacts__label--mail" for="email-field">Электронная
+                почта<sup>*</sup>:</label>
+              <input class="contacts__input contacts__input--mail" name="email" id="email-field" type="email"
+                     placeholder="Введите e-mail" autocomplete="on">
+            </li>
+          </ul>
         </section>
         <!-- Список с рейтингом -->
         <section class="form__rating rating">
           <h3 class="rating__title">Ваше общее впечатление:</h3>
-          <div class="rating__wrapper">
-            <ul class="rating__list centre">
-              <li class="rating__item">
-                <!--Здесь будет реализация кастомных чекбоксов -->
-                <label class="rating__checkbox">
-                  <input class="rating__input visually-hidden" type="radio" name="feeling" value="positive"
-                         checked="">
-                  <span class="checkbox__indicator"></span>
-                  Скорее положительное
-                </label>
-              </li>
-              <li class="rating__item">
-                <!--Здесь будет реализация кастомных чекбоксов -->
-                <label class="rating__checkbox">
-                  <input class="rating__input visually-hidden" type="radio" name="feeling" value="negative">
-                  <span class="checkbox__indicator"></span>
-                  Скорее отрицательное
-                </label>
-              </li>
-              <li class="rating__item">
-                <!--Здесь будет реализация кастомных чекбоксов -->
-                <label class="rating__checkbox">
-                  <input class="rating__input visually-hidden" type="radio" name="feeling" value="neutral">
-                  <span class="checkbox__indicator"></span>
-                  Затрудняюсь ответить
-                </label>
-              </li>
-            </ul>
-          </div>
+          <ul class="rating__list centre">
+            <li class="rating__item">
+              <!--Здесь будет реализация кастомных чекбоксов -->
+              <label class="rating__checkbox">
+                <input class="rating__input visually-hidden" type="radio" name="feeling" value="positive"
+                       checked="">
+                <span class="checkbox__indicator"></span>
+                Скорее положительное
+              </label>
+            </li>
+            <li class="rating__item">
+              <!--Здесь будет реализация кастомных чекбоксов -->
+              <label class="rating__checkbox">
+                <input class="rating__input visually-hidden" type="radio" name="feeling" value="negative">
+                <span class="checkbox__indicator"></span>
+                Скорее отрицательное
+              </label>
+            </li>
+            <li class="rating__item">
+              <!--Здесь будет реализация кастомных чекбоксов -->
+              <label class="rating__checkbox">
+                <input class="rating__input visually-hidden" type="radio" name="feeling" value="neutral">
+                <span class="checkbox__indicator"></span>
+                Затрудняюсь ответить
+              </label>
+            </li>
+          </ul>
         </section>
         <!-- Список с достопроимечательностями -->
         <section class="form__sights sights">
           <h3 class="sights__title">Посещенные достопримечательности:</h3>
-          <div class="sights__wrapper">
-            <ul class="sights__list centre">
-              <li class="sights__item">
-                <!--Здесь будет реализация кастомных чекбоксов -->
-                <label class="sights__checkbox">
-                  <input class="sights__input visually-hidden" type="checkbox" name="Devil's Bridge" checked="">
-                  <span class="checkbox__indicator"></span>
-                  Мост Дьявола
-                </label>
-              </li>
-              <li class="sights__item">
-                <!--Здесь будет реализация кастомных чекбоксов -->
-                <label class="sights__checkbox">
-                  <input class="sights__input visually-hidden" type="checkbox" name="Bell Rock" checked="">
-                  <span class="checkbox__indicator"></span>
-                  Гора-Колокол
-                </label>
-              </li>
-              <li class="sights__item">
-                <!--Здесь будет реализация кастомных чекбоксов -->
-                <label class="sights__checkbox">
-                  <input class="sights__input visually-hidden" type="checkbox" name="Slide Park" checked="">
-                  <span class="checkbox__indicator"></span>
-                  Слайд-парк
-                </label>
-              </li>
-              <li class="sights__item">
-                <!--Здесь будет реализация кастомных чекбоксов -->
-                <label class="sights__checkbox">
-                  <input class="sights__input visually-hidden" type="checkbox" name="Red Rock">
-                  <span class="checkbox__indicator"></span>
-                  Красные скалы
-                </label>
-              </li>
-            </ul>
-          </div>
+          <ul class="sights__list centre">
+            <li class="sights__item">
+              <!--Здесь будет реализация кастомных чекбоксов -->
+              <label class="sights__checkbox">
+                <input class="sights__input visually-hidden" type="checkbox" name="Devil's Bridge" checked="">
+                <span class="checkbox__indicator"></span>
+                Мост Дьявола
+              </label>
+            </li>
+            <li class="sights__item">
+              <!--Здесь будет реализация кастомных чекбоксов -->
+              <label class="sights__checkbox">
+                <input class="sights__input visually-hidden" type="checkbox" name="Bell Rock" checked="">
+                <span class="checkbox__indicator"></span>
+                Гора-Колокол
+              </label>
+            </li>
+            <li class="sights__item">
+              <!--Здесь будет реализация кастомных чекбоксов -->
+              <label class="sights__checkbox">
+                <input class="sights__input visually-hidden" type="checkbox" name="Slide Park" checked="">
+                <span class="checkbox__indicator"></span>
+                Слайд-парк
+              </label>
+            </li>
+            <li class="sights__item">
+              <!--Здесь будет реализация кастомных чекбоксов -->
+              <label class="sights__checkbox">
+                <input class="sights__input visually-hidden" type="checkbox" name="Red Rock">
+                <span class="checkbox__indicator"></span>
+                Красные скалы
+              </label>
+            </li>
+          </ul>
         </section>
         <section class="form__comment comment">
           <div class="comment__wrapper centre">

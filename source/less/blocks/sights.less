@@ -1,9 +1,10 @@
 .sights {
+  padding-top: 18px;
+  padding-bottom: 41px;
   .font-18-26-700();
   color: @black;
   background-color: @white;
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 40px;
 }
 
 .sights__list {
@@ -14,7 +15,6 @@
 .sights__title {
   margin: 0;
   margin-bottom: 31px;
-  padding-top: 19px;
   text-align: center;
   .font-18-26-700();
 }
@@ -155,7 +155,7 @@
 
 @media (min-width: @desktop-width) {
   .sights {
-    padding-bottom: 19px;
+    padding-top: 0;
     width: 960px;
   }
 
@@ -190,9 +190,5 @@
   .sights__title::after {
     content: "";
     width: 280px;
-  }
-
-  .sights__checkbox {
-    padding-left: 78px;
   }
 }
