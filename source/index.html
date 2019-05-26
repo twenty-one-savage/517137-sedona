@@ -1,36 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <!— Pixel Glass —>
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* По умолчанию мобильный макет */
-      background-image: url( "img/sedona-index-mobile.png" );
-    }
-    /* Планшет */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url( "img/sedona-index-tablet.png" );
-      }
-    }
-    /* Десктоп */
-    @media ( min-width: 1200px ) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url( "img/sedona-index-desktop.png" );
-      }
-    }
-
-    BODY {
-      opacity: .5;
-    }
-  </style>
-  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!— // Pixel Glass —>
   <meta charset="UTF-8">
   <title>"Седона"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -45,7 +15,8 @@
 <div class="shadow-wrapper">
   <header class="page-header page-header--nojs">
     <nav class="main-nav main-nav--opened">
-      <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+      <!-- Повесил блоку класс nojs-close, чтобы при выключенном  JS у пользователя кнопка закрытия меню не отражалась -->
+      <button class="main-nav__close nojs-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
           <a>Главная</a>
@@ -69,7 +40,8 @@
       </picture>
     </a>
     <div class="page-header__burger burger centre">
-      <button class="burger__button" type="button">
+      <!-- Повесил блоку класс nojs-burger__button, чтобы при выключенном  JS у пользователя кнопка меню не отражалась -->
+      <button class="burger__button nojs-burger__button" type="button">
         <svg class="burger__icon-menu" width="22" height="23">
           <use xlink:href="#icon-menu-sprite"></use>
         </svg>

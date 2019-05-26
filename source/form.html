@@ -1,38 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <!— Pixel Glass —>
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* По умолчанию мобильный макет */
-      background-image: url("img/sedona-form-mobile.png");
-    }
-
-    /* Планшет */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url("img/sedona-form-tablet.png");
-      }
-    }
-
-    /* Десктоп */
-    @media ( min-width: 1200px ) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url("img/sedona-form-desktop.png");
-      }
-    }
-
-    BODY {
-      opacity: .5;
-    }
-  </style>
-  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!— // Pixel Glass —>
   <meta charset="UTF-8">
   <title>"Седона : Отзывы"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -47,7 +15,8 @@
 <div class="shadow-wrapper">
   <header class="page-header page-header--nojs">
     <nav class="main-nav main-nav--opened">
-      <button class="main-nav__close" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <!-- Повесил блоку класс nojs-close, чтобы при выключенном  JS у пользователя кнопка закрытия меню не отражалась -->
+      <button class="main-nav__close nojs-close" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a href="index.html">Главная</a>
@@ -71,7 +40,8 @@
       </a>
     </nav>
     <div class="page-header__burger burger centre">
-      <button class="burger__button">
+      <!-- Повесил блоку класс nojs-burger__button, чтобы при выключенном  JS у пользователя кнопка меню не отражалась -->
+      <button class="burger__button nojs-burger__button">
         <svg class="burger__icon-menu" width="22" height="23">
           <use xlink:href="#icon-menu-sprite"></use>
         </svg>
@@ -95,18 +65,15 @@
             <ul class="fullname__list centre">
               <li class="fullname__item">
                 <label class="fullname__label fullname__label--desktop" for="name-field">Имя<sup>*</sup>:</label>
-                <input class="fullname__input fullname__input--name" type="text" name="name" id="name-field"
-                       placeholder="Петр" autocomplete="on">
+                <input class="fullname__input fullname__input--name" type="text" name="name" id="name-field" placeholder="Петр" autocomplete="on">
               </li>
               <li class="fullname__item">
                 <label class="fullname__label" for="surname-field">Фамилия<sup>*</sup>:</label>
-                <input class="fullname__input fullname__input--surname" type="text" name="surname" id="surname-field"
-                       placeholder="Иванов" autocomplete="on">
+                <input class="fullname__input fullname__input--surname" type="text" name="surname" id="surname-field" placeholder="Иванов" autocomplete="on">
               </li>
               <li class="fullname__item">
                 <label class="fullname__label fullname__label--hack" for="patronymic-field">Отчество:</label>
-                <input class="fullname__input" type="text" name="patronymic" id="patronymic-field"
-                       placeholder="Александрович" autocomplete="on">
+                <input class="fullname__input" type="text" name="patronymic" id="patronymic-field" placeholder="Александрович" autocomplete="on">
               </li>
             </ul>
         </section>
@@ -116,14 +83,12 @@
             <li class="contacts__item">
               <label class="contacts__label contacts__label--phone" for="phone-field"><span class="contacts__word">Контактный</span>
                 телефон<sup>*</sup>:</label>
-              <input class="contacts__input contacts__input--phone" name="phone" id="phone-field" type="number"
-                     placeholder="Введите телефон" autocomplete="on">
+              <input class="contacts__input contacts__input--phone" name="phone" id="phone-field" type="number" placeholder="Введите телефон" autocomplete="on">
             </li>
             <li class="contacts__item">
               <label class="contacts__label contacts__label--mail" for="email-field">Электронная
                 почта<sup>*</sup>:</label>
-              <input class="contacts__input contacts__input--mail" name="email" id="email-field" type="email"
-                     placeholder="Введите e-mail" autocomplete="on">
+              <input class="contacts__input contacts__input--mail" name="email" id="email-field" type="email" placeholder="Введите e-mail" autocomplete="on">
             </li>
           </ul>
         </section>
@@ -134,8 +99,7 @@
             <li class="rating__item">
               <!--Здесь будет реализация кастомных чекбоксов -->
               <label class="rating__checkbox">
-                <input class="rating__input visually-hidden" type="radio" name="feeling" value="positive"
-                       checked="">
+                <input class="rating__input visually-hidden" type="radio" name="feeling" value="positive" checked="">
                 <span class="checkbox__indicator"></span>
                 Скорее положительное
               </label>
